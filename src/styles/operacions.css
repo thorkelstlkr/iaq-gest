@@ -1,0 +1,88 @@
+/* Mòdul «operacions»: còpies de seguretat i restauració. */
+
+.op-resum {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin: 1rem 0;
+}
+.op-resum dt {
+  color: var(--apagat);
+  font-size: 0.85rem;
+}
+.op-resum dd {
+  margin: 0.15rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.op-carpeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+.op-carpeta .camp {
+  flex: 1 1 22rem;
+  margin: 0;
+}
+
+.op-accions {
+  text-align: right;
+}
+.op-accions .boto + .boto {
+  margin-left: 0.4rem;
+}
+
+.op-verificacio {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  background: var(--olivera-suau);
+}
+.op-verificacio p {
+  margin: 0 0 0.4rem;
+  overflow-wrap: anywhere;
+}
+.op-verificacio ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  columns: 2 14rem;
+}
+
+.op-pendent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ocre);
+  border-radius: var(--radi);
+  background: var(--ocre-suau);
+}
+.op-pendent p {
+  margin: 0;
+}
+
+/* Accés remot */
+.acces-remot {
+  display: grid;
+  gap: 1rem;
+}
+.acces-remot code {
+  display: inline-block;
+  margin: 0.15rem 0.4rem 0.15rem 0;
+  padding: 0.1rem 0.4rem;
+  background: var(--fons);
+  border: 1px solid var(--vora);
+  border-radius: 5px;
+}
+.avis-acces {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--ocre);
+  background: var(--ocre-suau);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}

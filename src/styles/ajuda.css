@@ -1,0 +1,205 @@
+/* Ajuda */
+.ajuda {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.ajuda-index {
+  position: sticky;
+  top: 1rem;
+  display: grid;
+  gap: 0.6rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+.ajuda-cerca {
+  width: 100%;
+}
+.ajuda-index nav {
+  display: grid;
+  gap: 0.15rem;
+  background: var(--superficie);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 0.5rem;
+}
+.ajuda-index a {
+  display: block;
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.ajuda-index a:hover {
+  background: var(--fons);
+}
+.ajuda-index a.actiu {
+  background: var(--primari-suau);
+  color: var(--primari-fosc);
+  font-weight: 600;
+}
+.ajuda-index summary {
+  cursor: pointer;
+  padding: 0.35rem 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.ajuda-index details a {
+  padding-left: 1.2rem;
+}
+.ajuda-especials {
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--vora);
+}
+.ajuda-cos {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.ajuda-article h2 {
+  margin-top: 0;
+}
+.ajuda-resum {
+  font-size: 1.08rem;
+  color: var(--apagat);
+}
+.ajuda-text {
+  line-height: 1.6;
+  max-width: 75ch;
+}
+.ajuda-text h2 {
+  font-size: 1.2rem;
+  margin: 1.4rem 0 0.4rem;
+}
+.ajuda-text h3 {
+  font-size: 1.05rem;
+  margin: 1.1rem 0 0.3rem;
+}
+.ajuda-text blockquote {
+  margin: 1rem 0;
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid var(--ocre);
+  background: var(--ocre-suau);
+  border-radius: 6px;
+}
+.ajuda-text blockquote p {
+  margin: 0;
+}
+.ajuda-relacionats {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vora);
+}
+.ajuda-relacionats details,
+.ajuda-pregunta {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--vora);
+}
+.ajuda-relacionats summary,
+.ajuda-pregunta summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.ajuda-targetes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+.ajuda-targeta {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  background: var(--superficie);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  text-decoration: none;
+  color: var(--text);
+}
+.ajuda-targeta:hover {
+  border-color: var(--primari);
+}
+.ajuda-targeta span {
+  color: var(--apagat);
+  font-size: 0.88rem;
+}
+.ajuda-seccions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+.ajuda-seccions h3 {
+  margin-top: 0;
+}
+.ajuda-seccions ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.ajuda-resultats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.ajuda-resultats a {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.ajuda-resultats p {
+  margin: 0.2rem 0 0;
+}
+.ajuda-glossari div {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--vora);
+}
+.ajuda-glossari dt {
+  font-weight: 700;
+}
+.ajuda-glossari dd {
+  margin: 0.2rem 0 0;
+}
+.ajuda-novetats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ajuda-novetats > li {
+  padding: 0.6rem 0 0.8rem;
+  border-bottom: 1px solid var(--vora);
+}
+.ajuda-novetats h3 {
+  margin: 0.1rem 0 0.4rem;
+}
+.ajuda-novetats p {
+  margin: 0;
+}
+.ajuda-quant-a {
+  display: grid;
+  gap: 1rem;
+}
+.ajuda-quant-a th {
+  text-align: left;
+  width: 40%;
+  font-weight: 600;
+}
+.ajuda-suport {
+  white-space: pre-wrap;
+  background: var(--fons);
+  border: 1px solid var(--vora);
+  border-radius: 8px;
+  padding: 0.7rem 0.9rem;
+  font: 0.82rem/1.5 ui-monospace, Consolas, monospace;
+  user-select: all;
+}
+@media (max-width: 900px) {
+  .ajuda {
+    grid-template-columns: 1fr;
+  }
+  .ajuda-index {
+    position: static;
+    max-height: none;
+  }
+}

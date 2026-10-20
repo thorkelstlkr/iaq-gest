@@ -1,0 +1,211 @@
+/* ---------- Comunitat: voluntariat i col·laboradors ---------- */
+
+.com-pagina .targeta + .targeta {
+  margin-top: 1.25rem;
+}
+.com-barra {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.com-inactiu td {
+  color: var(--apagat);
+}
+.com-retall {
+  max-width: 22rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Insígnies d'estat */
+.com-insignia {
+  white-space: nowrap;
+}
+.com-ok {
+  background: var(--olivera-suau);
+  color: var(--olivera);
+}
+.com-avis {
+  background: var(--ocre-suau);
+  color: #7a5313;
+}
+.com-perill {
+  background: #fdecea;
+  color: var(--negatiu);
+}
+.com-neutre {
+  background: #ece8e3;
+  color: var(--apagat);
+}
+.com-alerta {
+  margin: 0.5rem 0 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  background: var(--ocre-suau);
+  border-left: 4px solid var(--ocre);
+}
+
+/* Fitxes */
+.com-fitxa {
+  padding: 0 1.25rem 1.25rem;
+}
+.com-fitxa h3 {
+  margin: 1.1rem 0 0.4rem;
+  font-size: 1rem;
+}
+.com-fitxa .xifres {
+  margin-top: 0.75rem;
+}
+.com-dades {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.2rem 1rem;
+  margin: 0 0 0.75rem;
+}
+.com-dades dt {
+  font-weight: 600;
+  color: var(--apagat);
+}
+.com-dades dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.com-requisits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.com-accio {
+  margin-top: 0.75rem;
+}
+.com-vincula {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.4fr) auto;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .com-vincula {
+    grid-template-columns: 1fr;
+  }
+  .com-dades {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Entrada ràpida d'hores i selecció de persones */
+.com-entrada h3 {
+  margin: 0;
+}
+.com-tria-persones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.com-persona {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem 0.25rem 0.5rem;
+  border: 1px solid var(--vora);
+  border-radius: 999px;
+  background: var(--superficie);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.com-persona.actiu {
+  border-color: var(--olivera);
+  background: var(--olivera-suau);
+}
+.com-persona input {
+  margin: 0;
+}
+
+/* Documents adjunts */
+.com-adjunt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.com-adjunt-nom {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.com-visor {
+  padding: 0 1.25rem 1.25rem;
+}
+.com-visor img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 0.75rem;
+  border: 1px solid var(--vora);
+}
+.com-visor iframe {
+  display: block;
+  width: 100%;
+  height: 70vh;
+  border: 1px solid var(--vora);
+  margin-bottom: 0.75rem;
+}
+
+/* Documents imprimibles (acord, certificat, registre, resum d'hores) */
+.com-document h3 {
+  margin: 1.2rem 0 0.35rem;
+  font-size: 1rem;
+}
+.com-document p,
+.com-document li {
+  text-align: justify;
+}
+.com-document ul {
+  margin: 0.25rem 0 0.5rem;
+  padding-left: 1.3rem;
+}
+.com-document .gov-subtitol {
+  margin: 0.25rem 0 0;
+  font: 600 1rem var(--serif);
+  color: var(--apagat);
+}
+.com-document .com-dades {
+  margin: 0.5rem 0 0.75rem 1rem;
+}
+.com-certifica {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 1.2rem 0;
+}
+.com-lloc-data {
+  margin-top: 1.5rem;
+}
+.com-signatures {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+.com-document .signatures strong {
+  display: block;
+  margin-top: 0.2rem;
+}
+.com-taula-document {
+  margin: 0.5rem 0 1rem;
+}
+.com-taula-document td,
+.com-taula-document th {
+  font-size: 0.9rem;
+}
+
+@media print {
+  .com-document {
+    font-size: 10.5pt;
+  }
+  .com-document h3,
+  .com-signatures {
+    break-after: avoid;
+    break-inside: avoid;
+  }
+}

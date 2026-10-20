@@ -1,0 +1,263 @@
+/* Editor de disseny de la web */
+.disseny-web {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.disseny-controls {
+  display: grid;
+  gap: 0.6rem;
+}
+.disseny-previsualitzacio {
+  position: sticky;
+  top: 1rem;
+}
+.disseny-previsualitzacio .marc-web iframe {
+  height: calc(100vh - 9rem);
+  min-height: 520px;
+}
+.disseny-barra {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 0.6rem 0.8rem;
+  background: var(--superficie);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+}
+.disseny-pendent {
+  color: var(--ocre);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.disseny-seccio {
+  background: var(--superficie);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+}
+.disseny-seccio > summary {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  list-style: none;
+}
+.disseny-seccio > summary::-webkit-details-marker {
+  display: none;
+}
+.disseny-seccio > summary::before {
+  content: '▸';
+  display: inline-block;
+  width: 1.1em;
+  transition: transform 0.15s;
+}
+.disseny-seccio[open] > summary::before {
+  transform: rotate(90deg);
+}
+.disseny-seccio-cos {
+  padding: 0 1rem 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+.disseny-seccio-cos h4 {
+  margin: 0.6rem 0 0;
+}
+
+/* Temes */
+.temes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+.tema {
+  display: grid;
+  gap: 0.25rem;
+  text-align: left;
+  padding: 0.6rem 0.7rem;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+}
+.tema.actiu {
+  outline: 3px solid var(--primari);
+  outline-offset: 1px;
+}
+.tema small {
+  opacity: 0.75;
+  font-size: 0.72rem;
+}
+.tema-mostres {
+  display: flex;
+  gap: 3px;
+}
+.tema-mostres span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid rgb(0 0 0 / 0.12);
+}
+
+/* Colors */
+.colors-graella {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.6rem 0.8rem;
+}
+.camp-color {
+  display: grid;
+  gap: 0.25rem;
+}
+.camp-color-fila {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.camp-color-fila .input-color {
+  flex: 0 0 auto;
+}
+.codi-color {
+  width: 6.5rem;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.4rem;
+}
+
+/* Opcions en botons */
+.camp-opcions {
+  display: grid;
+  gap: 0.3rem;
+}
+.opcions-botons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.opcions-botons button {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--vora);
+  background: var(--superficie);
+  border-radius: 999px;
+  cursor: pointer;
+  color: inherit;
+}
+.opcions-botons button.actiu {
+  background: var(--primari);
+  border-color: var(--primari);
+  color: #fff;
+}
+
+/* Imatges */
+.disseny-imatge {
+  display: grid;
+  gap: 0.4rem;
+}
+.disseny-imatge-mostra {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--vora);
+  border-radius: 8px;
+  background: repeating-conic-gradient(#f1ece4 0 25%, #fff 0 50%) 0 0 / 16px 16px;
+  overflow: hidden;
+}
+.disseny-imatge-logo {
+  height: 90px;
+}
+.disseny-imatge-logo img {
+  max-height: 80px;
+  max-width: 90%;
+}
+.disseny-imatge-ampla {
+  aspect-ratio: 16 / 9;
+}
+.disseny-imatge-ampla img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.disseny-imatge p {
+  margin: 0;
+}
+
+/* Llista ordenable de blocs i menú */
+.llista-ordenable {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+.llista-ordenable li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--fons);
+  border: 1px solid var(--vora);
+  border-radius: 8px;
+}
+.llista-ordenable li.arrossegant {
+  opacity: 0.45;
+}
+.llista-ordenable li.sobre {
+  border-color: var(--primari);
+  box-shadow: inset 0 3px 0 var(--primari);
+}
+.llista-ordenable .nansa {
+  cursor: grab;
+  color: var(--apagat);
+  padding-top: 0.15rem;
+  user-select: none;
+}
+.llista-ordenable-cos {
+  flex: 1;
+  min-width: 0;
+}
+.llista-ordenable .fletxes {
+  display: flex;
+  gap: 0.1rem;
+}
+.llista-ordenable .fletxes button {
+  padding: 0 0.3rem;
+  font-size: 1rem;
+}
+.editor-bloc-cap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.editor-bloc-cap .casella {
+  flex: 1;
+}
+.editor-bloc.amagat strong {
+  color: var(--apagat);
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.editor-bloc-cos {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+.enllac.perill {
+  color: var(--negatiu);
+}
+textarea.codi {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1100px) {
+  .disseny-web {
+    grid-template-columns: 1fr;
+  }
+  .disseny-previsualitzacio {
+    position: static;
+  }
+}

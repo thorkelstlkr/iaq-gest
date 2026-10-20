@@ -1,0 +1,249 @@
+/* ---------- Subvencions i justificants ---------- */
+
+.subv-pagina .targeta + .targeta,
+.subv-pagina .xifres + .targeta {
+  margin-top: 1.25rem;
+}
+.subv-barra {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+.subv-barra p {
+  margin: 0;
+}
+.subv-compte {
+  display: inline-block;
+  margin-left: 0.4rem;
+  min-width: 1.4em;
+  padding: 0 0.35em;
+  border-radius: 999px;
+  background: var(--primari-suau);
+  color: var(--primari);
+  font-size: 0.75rem;
+  text-align: center;
+}
+.subv-fitxa {
+  display: grid;
+  grid-template-columns: minmax(9rem, max-content) 1fr;
+  gap: 0.45rem 1.25rem;
+  margin: 0;
+}
+.subv-fitxa dt {
+  color: var(--apagat);
+  font-size: 0.88rem;
+}
+.subv-fitxa dd {
+  margin: 0;
+}
+.subv-pre {
+  white-space: pre-wrap;
+}
+.subv-falta {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--negatiu);
+}
+.subv-termini.proper {
+  color: var(--ocre);
+  font-weight: 600;
+}
+.subv-termini.vencut {
+  color: var(--negatiu);
+  font-weight: 600;
+}
+.subv-avis {
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  background: var(--ocre-suau);
+  border-left: 4px solid var(--ocre);
+  font-size: 0.92rem;
+}
+.subv-avis ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.2rem;
+}
+.subv-progres {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1 1 18rem;
+}
+.subv-progres .barra-pista {
+  flex: 1;
+  max-width: 20rem;
+}
+.subv-llista-candidats {
+  max-height: 55vh;
+  overflow-y: auto;
+}
+.subv-esgotat {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Clip de justificants a les taules de moviments */
+.subv-clip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-right: 0.35rem;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: none;
+  color: var(--apagat);
+  opacity: 0.55;
+  font: 600 0.78rem var(--sans);
+  cursor: pointer;
+  vertical-align: middle;
+}
+.subv-clip.amb {
+  color: var(--olivera);
+  opacity: 1;
+}
+.subv-clip:hover,
+.subv-clip:focus-visible {
+  opacity: 1;
+  border-color: var(--vora);
+  background: var(--superficie);
+}
+
+/* Llista de fitxers adjunts */
+.subv-fitxers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.subv-fitxers li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.subv-fitxers li > .enllac {
+  flex: 1 1 12rem;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.subv-icona {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0 0.3rem;
+  border-radius: 4px;
+  background: var(--primari-suau);
+  color: var(--primari);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+/* Visor d'imatges i PDF */
+.subv-visor {
+  display: flex;
+  justify-content: center;
+  background: var(--fons);
+  border-radius: 8px;
+  padding: 0.5rem;
+  max-height: 70vh;
+  overflow: auto;
+}
+.subv-visor-imatge {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.subv-visor-pdf {
+  width: 100%;
+  height: 68vh;
+  border: 0;
+  background: #fff;
+}
+
+/* Compte justificatiu */
+.subv-justificacio .imprimible {
+  margin-top: 1.25rem;
+}
+.subv-dades {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+}
+.subv-dades th {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.2rem 1.25rem 0.2rem 0;
+  color: var(--apagat);
+  vertical-align: top;
+  white-space: nowrap;
+}
+.subv-dades td {
+  padding: 0.2rem 0;
+}
+.subv-justificacio .document h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+.subv-relacio {
+  font-size: 0.85rem;
+}
+.subv-relacio .subv-categoria th {
+  text-align: left;
+  background: var(--fons);
+  font-weight: 600;
+}
+.subv-relacio .subv-subtotal td {
+  font-style: italic;
+  border-bottom: 1px solid var(--vora);
+}
+.subv-resum {
+  max-width: 32rem;
+}
+.subv-resum th {
+  text-align: left;
+  font-weight: 500;
+}
+.subv-declaracio li + li {
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 640px) {
+  .subv-fitxa {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .subv-fitxa dd {
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media print {
+  .subv-relacio .subv-categoria th {
+    background: none;
+  }
+  .subv-relacio tr {
+    break-inside: avoid;
+  }
+}
+
+/* Drecera d'imputació al formulari de moviments (fora del <form>) */
+.subv-imputacions-moviment {
+  margin: 0 1.25rem 1.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--vora);
+}
+.subv-imputacions-moviment ul {
+  margin: 0.4rem 0 0.6rem;
+  padding-left: 1.2rem;
+}
+.subv-imputacions-moviment .camp-etiqueta {
+  display: block;
+  margin-bottom: 0.4rem;
+}

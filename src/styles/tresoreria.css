@@ -1,0 +1,183 @@
+/* Tresoreria: pressupost, remeses SEPA, rebuts i exercicis tancats. */
+
+/* Exercici tancat */
+.avis-tancat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--vora);
+  border-left: 4px solid currentColor;
+  border-radius: var(--radi);
+  background: var(--superficie);
+  color: inherit;
+  margin: 0 0 1rem;
+}
+.cadenat {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.55em;
+  margin: 0 0.4em 0 0.1em;
+  border-radius: 0.12em;
+  background: currentColor;
+  position: relative;
+  vertical-align: -0.05em;
+  opacity: 0.75;
+}
+.cadenat::before {
+  content: '';
+  position: absolute;
+  left: 0.12em;
+  right: 0.12em;
+  bottom: 100%;
+  height: 0.38em;
+  border: 0.1em solid currentColor;
+  border-bottom: 0;
+  border-radius: 0.3em 0.3em 0 0;
+}
+.fieldset-transparent {
+  display: contents;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Quotes: caselles de selecció */
+.casella-taula {
+  width: 2rem;
+  text-align: center;
+}
+
+/* Pressupost */
+.pressupost-taula {
+  margin-bottom: 1rem;
+}
+.pressupost-taula th:first-child,
+.pressupost-taula td:first-child {
+  width: 40%;
+}
+.pressupost-taula tfoot td,
+.pressupost-resultat td {
+  font-weight: 600;
+}
+
+/* Fiscalitat */
+.veredicte {
+  border-left-width: 5px;
+  margin: 1rem 0;
+}
+.veredicte h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+.veredicte-obligat {
+  border-left-color: var(--negatiu);
+}
+.veredicte-exempt {
+  border-left-color: var(--positiu);
+}
+
+/* Remeses */
+.barra-tresoreria {
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.xml-remesa {
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.78rem;
+  white-space: pre;
+  margin: 0.5rem 0 1rem;
+}
+.fila-camp {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.fila-camp input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Rebuts de quotes */
+.rebut {
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  background: #fff;
+  color: #222;
+  break-inside: avoid;
+}
+.rebut-cap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.rebut-cap p {
+  margin: 0;
+}
+.rebut-entitat {
+  font-weight: 700;
+}
+.rebut-num {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+.rebut-num strong {
+  font-size: 1.2rem;
+}
+.rebut-dades {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin: 0 0 1rem;
+}
+.rebut-dades dt {
+  color: #666;
+}
+.rebut-dades dd {
+  margin: 0;
+}
+.rebut-import {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.rebut-signatura {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+}
+.rebut-signatura span {
+  border-top: 1px solid #999;
+  padding-top: 0.3rem;
+  min-width: 14rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .rebut-cap {
+    flex-direction: column;
+  }
+  .rebut-num {
+    align-items: flex-start;
+  }
+}
+
+@media print {
+  .rebut {
+    border-color: #999;
+    page-break-after: always;
+  }
+  .rebut:last-child {
+    page-break-after: auto;
+  }
+}

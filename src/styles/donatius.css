@@ -1,0 +1,181 @@
+/* Donatius, inventari i calendari d'obligacions. */
+
+.don-pagina {
+  display: grid;
+  gap: 1rem;
+}
+
+.don-explicacio {
+  border-left: 4px solid var(--ocre);
+  background: color-mix(in srgb, var(--ocre) 10%, transparent);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.don-explicacio p {
+  margin: 0 0 0.4rem;
+}
+.don-explicacio p:last-child {
+  margin-bottom: 0;
+}
+.don-explicacio-si {
+  border-left-color: var(--positiu);
+  background: color-mix(in srgb, var(--positiu) 10%, transparent);
+}
+
+.don-revocada td {
+  color: var(--apagat);
+  text-decoration: line-through;
+}
+.don-revocada td:last-child,
+.don-revocada td:nth-last-child(2) {
+  text-decoration: none;
+}
+.don-no-declarable td {
+  background: color-mix(in srgb, var(--negatiu) 6%, transparent);
+}
+
+.don-csv {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+.don-csv textarea {
+  flex-basis: 100%;
+  width: 100%;
+  font-family: ui-monospace, monospace;
+  font-size: 0.8rem;
+}
+
+.don-notes {
+  margin-top: 0.75rem;
+  padding-left: 1.2rem;
+}
+
+.don-foto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+.don-foto img {
+  max-width: 220px;
+  max-height: 165px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.don-estat-bo {
+  background: color-mix(in srgb, var(--positiu) 18%, transparent);
+}
+.don-estat-regular {
+  background: color-mix(in srgb, var(--ocre) 22%, transparent);
+}
+.don-estat-dolent {
+  background: color-mix(in srgb, var(--negatiu) 18%, transparent);
+}
+
+/* Certificat de donació */
+.don-document {
+  max-width: 46rem;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+.don-num {
+  text-align: right;
+  font-size: 0.9rem;
+}
+.don-certifico {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.don-punts li {
+  margin-bottom: 0.5rem;
+}
+.don-taula-doc {
+  margin: 0.5rem 0 1rem;
+}
+.don-avis-rebut {
+  font-style: italic;
+  border: 1px solid currentColor;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+/* Calendari d'obligacions */
+.cal-obligacions {
+  display: grid;
+  gap: 0.5rem;
+}
+.cal-cap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.cal-mes h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--apagat);
+}
+.cal-mes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cal-item {
+  display: grid;
+  grid-template-columns: 3rem 1fr auto auto;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+}
+.cal-data {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+.cal-text {
+  display: grid;
+  min-width: 0;
+}
+.cal-no_aplica .cal-text,
+.cal-fet .cal-text {
+  opacity: 0.65;
+}
+.cal-estat-fet {
+  background: color-mix(in srgb, var(--positiu) 20%, transparent);
+}
+.cal-estat-pendent {
+  background: color-mix(in srgb, var(--ocre) 25%, transparent);
+}
+.cal-estat-desconegut {
+  background: color-mix(in srgb, #5b7fa6 18%, transparent);
+}
+.cal-estat-no_aplica {
+  background: color-mix(in srgb, currentColor 8%, transparent);
+}
+.cal-vencut .insignia {
+  background: color-mix(in srgb, var(--negatiu) 25%, transparent);
+}
+.cal-marca {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .cal-item {
+    grid-template-columns: 2.8rem 1fr auto;
+  }
+  .cal-marca {
+    grid-column: 2 / -1;
+  }
+}
+
+@media print {
+  .don-explicacio {
+    background: none;
+  }
+}

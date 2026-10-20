@@ -1,0 +1,74 @@
+# Compila els instal·ladors per a Windows, macOS i Linux a les màquines de GitHub.
+# - En cada etiqueta de versió (p. ex. «v1.0.0») crea una «Release» amb els tres instal·ladors.
+# - També es pot llançar a mà (pestanya Actions → Compila els instal·ladors → Run workflow);
+#   aleshores els instal·ladors queden com a «artifacts» de l'execució.
+name: Compila els instal·ladors
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compila:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            ordre: dist:win
+          - os: macos-latest
+            ordre: dist:mac
+          - os: ubuntu-latest
+            ordre: dist:linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Instal·la les dependències
+        run: npm ci
+
+      - name: Proves
+        run: npm test
+
+      - name: Compila l'instal·lador
+        run: npm run ${{ matrix.ordre }} -- --publish never
+        env:
+          # Sense certificat de signatura (encara): que electron-builder no en busqui cap.
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+
+      - name: Desa els instal·ladors
+        uses: actions/upload-artifact@v4
+        with:
+          name: instal·ladors-${{ matrix.os }}
+          path: |
+            release/*.exe
+            release/*.dmg
+            release/*.zip
+            release/*.AppImage
+            release/*.deb
+          if-no-files-found: error
+
+  publica:
+    needs: compila
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: instal·ladors
+          merge-multiple: true
+
+      - name: Crea la «Release» amb els instal·ladors
+        uses: softprops/action-gh-release@v2
+        with:
+          files: instal·ladors/*
+          generate_release_notes: true

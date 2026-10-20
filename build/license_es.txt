@@ -1,0 +1,38 @@
+﻿Licencia y exención de responsabilidad
+
+SOFTWARE LIBRE
+Este programa es software libre, distribuido con la licencia MIT (texto completo al final). Cualquier persona o entidad puede usarlo, copiarlo, modificarlo y distribuirlo, también para adaptarlo a su asociación, siempre que mantenga el aviso de copyright y de licencia.
+
+EXENCIÓN DE RESPONSABILIDAD
+1. Herramienta de ayuda, no asesoramiento. El programa ayuda a gestionar una asociación (socios, contabilidad, fiscalidad, protección de datos, facturación, órganos de gobierno…), pero no constituye asesoramiento jurídico, fiscal, contable ni de protección de datos. Los textos, plazos, porcentajes y modelos que muestra son orientativos y pueden quedar desfasados si cambia la normativa. Consultadlo con una gestoría o un profesional antes de presentar cualquier declaración o documento oficial.
+2. Responsabilidad de la entidad. La entidad que lo usa es la responsable del tratamiento de los datos personales que introduce (Reglamento general de protección de datos y Ley Orgánica 3/2018), del cumplimiento de sus obligaciones legales, fiscales y contables, y de la veracidad de los datos.
+3. Facturación. La facturación electrónica (VERI*FACTU) y el envío de registros a la Agencia Tributaria se hacen bajo la responsabilidad de la entidad y con su certificado. Comprobad su funcionamiento en el entorno de pruebas antes de usarlo de verdad.
+4. Copias de seguridad. Los datos se guardan en el ordenador donde se instala el programa. La entidad es responsable de hacer y conservar copias de seguridad (el programa las hace cada día; configurad también una copia externa, por ejemplo en Google Drive).
+5. Agentes de inteligencia artificial y servicios externos. Si conectáis asistentes de IA, publicación por FTP, redes sociales o correo, los datos que pasen por ellos quedan sujetos a las condiciones de esos servicios. Revisad sus acuerdos de tratamiento de datos.
+6. Sin garantías. El programa se entrega «tal cual», sin ninguna garantía de funcionamiento, de adecuación a un fin concreto ni de ausencia de errores. Los autores y la Associació I ara qué? no responden de ningún daño, pérdida de datos, sanción o perjuicio derivado de su uso.
+
+Al instalar o usar el programa, aceptáis estas condiciones.
+
+────────────────────────────────────────
+
+MIT License
+
+Copyright (c) 2026 Associació I ara qué? i les persones que hi han contribuït
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,119 @@
+/* «El meu agent d'IA» */
+.agent-totes {
+  margin-left: auto;
+  font-size: 0.85rem;
+}
+.agent-connecta,
+.agent-propostes {
+  display: grid;
+  gap: 1rem;
+}
+.agent-estat {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.agent-estat-ok {
+  background: var(--olivera-suau);
+  color: var(--olivera);
+}
+.agent-estat-avis {
+  background: var(--ocre-suau);
+  color: var(--ocre);
+}
+.agent-estat-perill {
+  background: color-mix(in srgb, var(--negatiu) 12%, var(--superficie));
+  color: var(--negatiu);
+}
+.agent-estat-neutre {
+  background: var(--fons);
+  color: var(--apagat);
+  border: 1px solid var(--vora);
+}
+.agent-copiable {
+  position: relative;
+  background: #1f1b18;
+  color: #f2ebe1;
+  border-radius: 8px;
+  padding: 0.8rem 0.9rem;
+}
+.agent-copiable pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font: 0.82rem/1.45 ui-monospace, Consolas, monospace;
+  padding-right: 5rem;
+}
+.agent-copiable button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.agent-clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.6rem 0;
+}
+.agent-clients button {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--vora);
+  background: var(--superficie);
+  border-radius: 999px;
+  cursor: pointer;
+  color: inherit;
+}
+.agent-clients button.actiu {
+  background: var(--primari);
+  border-color: var(--primari);
+  color: #fff;
+}
+.agent-passos {
+  margin: 0.4rem 0 0.8rem;
+  padding-left: 1.3rem;
+}
+.agent-passos li {
+  margin-bottom: 0.3rem;
+}
+.agent-llista-propostes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.agent-llista-propostes li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--vora);
+  border-left: 4px solid var(--ocre);
+  border-radius: 8px;
+  background: var(--fons);
+}
+.agent-llista-propostes p {
+  margin: 0.25rem 0 0;
+}
+.agent-args {
+  max-width: 46ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.agent-codi {
+  text-align: center;
+}
+.agent-codi-valor {
+  font: 700 2.2rem ui-monospace, Consolas, monospace;
+  letter-spacing: 0.15em;
+  margin: 0.8rem 0;
+  color: var(--primari);
+}

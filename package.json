@@ -1,0 +1,149 @@
+{
+  "name": "iaraque-gestio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gestió per a associacions sense ànim de lucre: socis, economia, activitats, web, òrgans de govern i compliment legal.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,green \"node --disable-warning=ExperimentalWarning --watch server/index.ts\" \"vite\"",
+    "build": "tsc && vite build",
+    "start": "node --disable-warning=ExperimentalWarning server/index.ts",
+    "typecheck": "tsc",
+    "build:demo": "node --disable-warning=ExperimentalWarning scripts/build-demo.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test server/**/*.test.ts",
+    "i18n": "node --disable-warning=ExperimentalWarning scripts/i18n-revisa.ts",
+    "dades-prova": "node --disable-warning=ExperimentalWarning scripts/dades-prova.ts",
+    "restableix-admin": "node --disable-warning=ExperimentalWarning scripts/restableix-admin.ts",
+    "cal-compilar": "node --disable-warning=ExperimentalWarning scripts/cal-compilar.ts",
+    "mcp": "node scripts/mcp.ts",
+    "escriptori": "vite build && electron .",
+    "icones": "electron scripts/genera-icones.cjs",
+    "llicencies": "node scripts/genera-llicencies.ts",
+    "dist": "vite build && npm run llicencies && electron-builder",
+    "dist:win": "vite build && npm run llicencies && electron-builder --win",
+    "dist:mac": "vite build && npm run llicencies && electron-builder --mac",
+    "dist:linux": "vite build && npm run llicencies && electron-builder --linux"
+  },
+  "dependencies": {
+    "basic-ftp": "^6.2.3",
+    "express": "^5.2.1",
+    "nodemailer": "^10.1.2",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@babel/parser": "^8.0.7",
+    "@babel/traverse": "^8.0.7",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "@types/nodemailer": "^8.0.2",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "electron": "^38.8.6",
+    "electron-builder": "^26.15.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.1"
+  },
+  "license": "MIT",
+  "allowScripts": {
+    "electron@38.8.6": true,
+    "electron-winstaller@5.4.0": true
+  },
+  "author": {
+    "name": "Associació I ara qué?"
+  },
+  "main": "electron/main.cjs",
+  "build": {
+    "appId": "org.iaraque.gestio",
+    "productName": "I ara qué Gestió",
+    "copyright": "© 2026 Associació I ara qué? — Llicència MIT",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "asar": false,
+    "files": [
+      "electron/**",
+      "server/**",
+      "shared/**",
+      "dist/**",
+      "build/icon.png",
+      "build/tray.png",
+      "build/tray-mac.png",
+      "scripts/mcp.ts",
+      "scripts/restableix-admin.ts",
+      "package.json",
+      "LICENSE",
+      "!**/*.test.ts",
+      "!server/agent/prova-servidor.ts"
+    ],
+    "extraMetadata": {
+      "main": "electron/main.cjs"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.png",
+      "artifactName": "I-ara-que-Gestio-${version}-Windows.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "I ara qué Gestió",
+      "multiLanguageInstaller": true,
+      "displayLanguageSelector": true,
+      "installerLanguages": [
+        "ca_ES",
+        "es_ES",
+        "en_US"
+      ],
+      "deleteAppDataOnUninstall": false,
+      "warningsAsErrors": false
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "build/icon.png",
+      "category": "public.app-category.business",
+      "artifactName": "I-ara-que-Gestio-${version}-Mac-${arch}.${ext}"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "build/icon.png",
+      "category": "Office",
+      "maintainer": "Associació I ara qué?",
+      "synopsis": "Gestió per a associacions",
+      "artifactName": "I-ara-que-Gestio-${version}-Linux-${arch}.${ext}"
+    },
+    "deb": {
+      "depends": [
+        "libnotify4",
+        "libxtst6",
+        "libnss3"
+      ]
+    }
+  }
+}

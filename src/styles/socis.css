@@ -1,0 +1,83 @@
+/* ---------- Registre de socis: categories, admissió, períodes, importació, llibre registre ---------- */
+
+.insignia-sense-vot {
+  background: var(--ocre-suau);
+  color: #6f4c12;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.insignia-admissio-sollicitada {
+  background: var(--ocre-suau);
+  color: #6f4c12;
+}
+.insignia-admissio-admesa {
+  background: var(--olivera-suau);
+  color: var(--olivera);
+}
+.insignia-admissio-denegada {
+  background: #ece8e3;
+  color: var(--apagat);
+}
+
+.boto-enllac {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--primari);
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+}
+
+.error-inline {
+  color: var(--negatiu);
+}
+
+.periodes-soci,
+.admissio-soci {
+  margin-bottom: 1.25rem;
+}
+
+.categoria-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+}
+.categoria-form h3,
+.categoria-form .formulari-peu {
+  grid-column: 1 / -1;
+}
+@media (max-width: 600px) {
+  .categoria-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.importa-socis select {
+  max-width: 100%;
+}
+.importa-resultat {
+  max-height: 22rem;
+  overflow: auto;
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  margin-top: 0.5rem;
+}
+.importa-resultat .fila-error td:first-child {
+  border-left: 3px solid var(--negatiu);
+}
+
+.llibre-registre tbody.llibre-soci {
+  break-inside: avoid;
+}
+.llibre-registre tbody.llibre-soci + tbody.llibre-soci tr:first-child td {
+  border-top: 1px solid var(--vora);
+}
+.llibre-registre td {
+  vertical-align: top;
+}
+@media print {
+  .llibre-registre {
+    font-size: 9pt;
+  }
+}

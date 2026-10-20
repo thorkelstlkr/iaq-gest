@@ -1,0 +1,38 @@
+﻿Licence and disclaimer
+
+FREE SOFTWARE
+This program is free software, distributed under the MIT licence (full text at the end). Anyone, person or organisation, may use, copy, modify and distribute it, including adapting it to their own association, as long as the copyright and licence notice is kept.
+
+DISCLAIMER
+1. A support tool, not advice. The program helps manage an association (members, accounts, tax, data protection, invoicing, governing bodies…), but it is not legal, tax, accounting or data-protection advice. The texts, deadlines, percentages and forms it shows are for guidance and may become outdated if regulations change. Check with an adviser before filing any return or official document.
+2. The organisation's responsibility. The organisation using it is the controller of the personal data it enters (General Data Protection Regulation and Spanish Organic Law 3/2018), and is responsible for meeting its legal, tax and accounting obligations and for the accuracy of the data.
+3. Invoicing. Electronic invoicing (VERI*FACTU) and sending records to the Spanish Tax Agency are done under the organisation's responsibility and with its certificate. Test them in the test environment before real use.
+4. Backups. Data is stored on the computer where the program is installed. The organisation is responsible for making and keeping backups (the program makes one every day; also set up an external copy, for example to Google Drive).
+5. AI agents and external services. If you connect AI assistants, FTP publishing, social media or email, the data passing through them is subject to those services' terms. Review their data processing agreements.
+6. No warranty. The program is provided “as is”, without any warranty of operation, fitness for a particular purpose or freedom from errors. The authors and the Associació I ara qué? accept no liability for any damage, data loss, penalty or harm arising from its use.
+
+By installing or using the program, you accept these terms.
+
+────────────────────────────────────────
+
+MIT License
+
+Copyright (c) 2026 Associació I ara qué? i les persones que hi han contribuït
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

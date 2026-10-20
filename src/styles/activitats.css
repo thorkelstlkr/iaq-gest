@@ -1,0 +1,382 @@
+/* ---------- Activitats: inscripcions, passar llista, documents i impacte ---------- */
+
+.act-pestanyes {
+  padding: 0 1.25rem;
+  margin-bottom: 0;
+}
+.act-panell {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.act-anullada td {
+  color: var(--apagat);
+  text-decoration: line-through;
+}
+.act-estat {
+  background: var(--ocre-suau);
+  color: var(--ocre);
+}
+.act-estat-idea {
+  background: #eee9e2;
+  color: var(--apagat);
+}
+.act-estat-confirmada {
+  background: var(--olivera-suau);
+  color: var(--olivera);
+}
+.act-estat-feta {
+  background: #e6ecf2;
+  color: #3e5a73;
+}
+.act-estat-anullada {
+  background: var(--primari-suau);
+  color: var(--negatiu);
+}
+.act-planificacio {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.9rem 1rem;
+}
+.act-pressupost {
+  margin: 0;
+}
+
+/* Comptadors */
+.act-comptadors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.6rem;
+}
+.act-comptador {
+  background: var(--superficie);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.act-comptador strong {
+  font-size: 1.5rem;
+  font-family: var(--serif);
+}
+.act-comptador span {
+  font-size: 0.8rem;
+  color: var(--apagat);
+}
+.act-ple {
+  border-color: var(--ocre);
+  background: var(--ocre-suau);
+}
+
+/* Avís de persones que han entrat de la llista d'espera */
+.act-promocionats {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: var(--ocre-suau);
+  border: 1px solid var(--ocre);
+  border-radius: var(--radi);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+.act-promocionats ul {
+  margin: 0.3rem 0 0;
+  padding-left: 1.2rem;
+}
+
+/* Alta ràpida */
+.act-alta {
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 0.75rem;
+  background: var(--superficie);
+}
+.act-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+.act-modes button {
+  font: 600 0.85rem var(--sans);
+  border: 1px solid var(--vora);
+  background: var(--fons);
+  color: var(--apagat);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  cursor: pointer;
+}
+.act-modes button.actiu {
+  background: var(--primari);
+  border-color: var(--primari);
+  color: #fff;
+}
+.act-alta .afegeix-linia {
+  margin-bottom: 0;
+}
+.act-alta-extern {
+  padding: 0;
+}
+
+/* Llista d'inscripcions */
+.act-subtitol {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+}
+.act-inscripcions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+ol.act-inscripcions {
+  list-style: decimal;
+  padding-left: 1.4rem;
+}
+.act-inscripcio {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--vora);
+  flex-wrap: wrap;
+}
+.act-inscripcio > input[type='checkbox'] {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex: none;
+}
+.act-inscripcio-nom {
+  flex: 1 1 180px;
+  min-width: 0;
+}
+.act-inscripcio-nom .enllac {
+  font-weight: 600;
+  text-align: left;
+  color: var(--text);
+  text-decoration-color: var(--vora);
+}
+.act-inscripcio-nom .enllac:hover {
+  color: var(--primari);
+}
+.act-inscripcio-avisos {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+.act-inscripcio-accions {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  margin-left: auto;
+}
+.act-estat-cancellat .act-inscripcio-nom {
+  text-decoration: line-through;
+  color: var(--apagat);
+}
+.act-avis {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  background: #eee9e2;
+  color: var(--apagat);
+  white-space: nowrap;
+}
+.act-avis-alerta {
+  background: var(--primari-suau);
+  color: var(--negatiu);
+}
+
+/* Passar llista: botons grans per a la porta */
+.act-anonims {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  background: var(--superficie);
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 0.75rem;
+}
+.act-anonims-etiqueta {
+  font-weight: 600;
+  flex: 1 1 100%;
+}
+.act-anonims input {
+  width: 6rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0.4rem;
+}
+.act-boto-gran {
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  border-radius: 12px;
+  border: 1px solid var(--vora);
+  background: var(--fons);
+  cursor: pointer;
+}
+.act-boto-gran:active {
+  background: var(--primari-suau);
+}
+.act-passar-cap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.act-passar-cap input {
+  flex: 0 1 260px;
+}
+.act-graella-llista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
+}
+.act-fitxa-persona {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  column-gap: 0.6rem;
+  text-align: left;
+  min-height: 4rem;
+  padding: 0.7rem;
+  border: 2px solid var(--vora);
+  border-radius: 12px;
+  background: var(--superficie);
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+.act-fitxa-persona:focus-visible {
+  outline: 3px solid var(--primari);
+  outline-offset: 2px;
+}
+.act-marca {
+  grid-row: 1 / span 2;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 2px solid var(--vora);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.act-fitxa-nom {
+  font-weight: 600;
+}
+.act-fitxa-detall {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--apagat);
+}
+.act-arribat {
+  border-color: var(--olivera);
+  background: var(--olivera-suau);
+}
+.act-arribat .act-marca {
+  background: var(--olivera);
+  border-color: var(--olivera);
+  color: #fff;
+}
+.act-nou-assistent {
+  margin: 0;
+}
+
+/* Documents */
+.act-previsualitzacio {
+  max-height: 60vh;
+  overflow: auto;
+}
+.act-taula-signatures {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.act-taula-signatures th,
+.act-taula-signatures td {
+  border: 1px solid var(--text);
+  padding: 0.35rem 0.5rem;
+  height: 2.2rem;
+  text-align: left;
+}
+.act-taula-signatures .num {
+  text-align: right;
+  width: 2.5rem;
+}
+.act-col-signatura {
+  width: 35%;
+}
+.act-autoritzacio h3 {
+  margin: 1rem 0 0.3rem;
+  font-size: 1rem;
+}
+.act-autoritzacio .clausula {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.act-autoritzacio .signatures {
+  margin-top: 2.5rem;
+}
+.act-impressio {
+  display: none;
+}
+
+/* Memòria: impacte i noms a les signatures */
+.act-impacte table {
+  margin-bottom: 0.5rem;
+}
+.signatura-nom {
+  display: block;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+@media print {
+  /* Documents d'una activitat: només s'imprimeix la còpia posada a l'arrel de la pàgina. */
+  body.imprimint-activitat > *:not(.act-impressio) {
+    display: none !important;
+  }
+  body.imprimint-activitat .act-impressio {
+    display: block;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+  .act-salt-pagina {
+    break-before: page;
+  }
+  .act-taula-signatures tr {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 600px) {
+  .act-panell {
+    padding: 1rem;
+  }
+  .act-inscripcio-accions {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .act-graella-llista {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,138 @@
+// Textos de la interfície del mòdul «operacions»: català → castellà / anglès (clau: el text català dins t("…")).
+export const es: Record<string, string> = {
+  "Les còpies es desaran també a {0} ({1}).": "Las copias se guardarán también en {0} ({1}).",
+  "Hem trobat aquestes carpetes sincronitzades amb el núvol en aquest ordinador. Amb un clic, cada còpia diària es desarà també al núvol:": "Hemos encontrado estas carpetas sincronizadas con la nube en este ordenador. Con un clic, cada copia diaria se guardará también en la nube:",
+  "Desa-les a {0}": "Guardarlas en {0}",
+  "Per desar les còpies a Google Drive, instal·la «Google Drive per a ordinadors» (google.com/drive/download) i inicia-hi sessió amb el compte de l'entitat; després torna aquí i apareixerà un botó per fer-ho servir.": "Para guardar las copias en Google Drive, instala «Google Drive para ordenadores» (google.com/drive/download) e inicia sesión con la cuenta de la entidad; después vuelve aquí y aparecerá un botón para usarlo.",
+  'Versió {0}': 'Versión {0}',
+  // Còpia de seguretat
+  "Moviments comptables": "Movimientos contables",
+  "Reunions": "Reuniones",
+  "Notícies de la web": "Noticias de la web",
+  "Còpia feta, però no s'ha pogut desar a la carpeta externa: {0}": "Copia hecha, pero no se ha podido guardar en la carpeta externa: {0}",
+  "Còpia feta: {0}": "Copia hecha: {0}",
+  "Les còpies de seguretat no estan disponibles en aquesta versió.": "Las copias de seguridad no están disponibles en esta versión.",
+  "Totes les dades es guarden en un únic fitxer en aquest ordinador. El programa en fa una còpia automàtica cada dia que s'obre i en conserva les dels darrers 7 dies i la primera de cada mes dels darrers 12 mesos. Perquè una avaria, un robatori o un virus no s'ho emportin tot, configura també una carpeta externa: un llapis USB o una carpeta sincronitzada amb el núvol (OneDrive, Google Drive…).":
+    "Todos los datos se guardan en un único archivo en este ordenador. El programa hace una copia automática cada día que se abre y conserva las de los últimos 7 días y la primera de cada mes de los últimos 12 meses. Para que una avería, un robo o un virus no se lo lleven todo, configura también una carpeta externa: un lápiz USB o una carpeta sincronizada con la nube (OneDrive, Google Drive…).",
+  "Darrera còpia": "Última copia",
+  "Encara no se n'ha fet cap.": "Todavía no se ha hecho ninguna.",
+  "Carpeta de les còpies": "Carpeta de las copias",
+  "Versió del programa": "Versión del programa",
+  "Error en la darrera còpia automàtica: {0}": "Error en la última copia automática: {0}",
+  "Fent la còpia…": "Haciendo la copia…",
+  "Fes una còpia ara": "Haz una copia ahora",
+  "Les còpies contenen totes les dades. Les contrasenyes guardades (correu, FTP, certificat digital, xarxes socials) hi van xifrades amb una clau que és al fitxer «clau.key» de la carpeta {0}. Per recuperar-les en un altre ordinador, guarda també una còpia d'aquest fitxer en un lloc segur i separat; si no, només caldrà tornar-les a escriure.":
+    "Las copias contienen todos los datos. Las contraseñas guardadas (correo, FTP, certificado digital, redes sociales) van cifradas con una clave que está en el archivo «clau.key» de la carpeta {0}. Para recuperarlas en otro ordenador, guarda también una copia de este archivo en un lugar seguro y separado; si no, solo habrá que volver a escribirlas.",
+  "La carpeta és accessible i s'hi pot escriure.": "La carpeta es accesible y se puede escribir en ella.",
+  "Carpeta externa desada. La propera còpia s'hi desarà també.": "Carpeta externa guardada. La próxima copia se guardará también en ella.",
+  "Carpeta externa eliminada.": "Carpeta externa eliminada.",
+  "Carpeta externa": "Carpeta externa",
+  "Cada còpia diària es desa també en aquesta carpeta. Escriu la ruta completa, per exemple «E:\\Còpies» (llapis USB) o «C:\\Users\\nom\\OneDrive\\Associació\\Còpies» (carpeta sincronitzada amb el núvol).":
+    "Cada copia diaria se guarda también en esta carpeta. Escribe la ruta completa, por ejemplo «E:\\Copias» (lápiz USB) o «C:\\Users\\nombre\\OneDrive\\Asociación\\Copias» (carpeta sincronizada con la nube).",
+  "Ruta de la carpeta": "Ruta de la carpeta",
+  "Prova": "Probar",
+  "La darrera còpia no s'ha pogut desar a la carpeta externa: {0}": "La última copia no se ha podido guardar en la carpeta externa: {0}",
+  "Darrera còpia a la carpeta externa: {0}": "Última copia en la carpeta externa: {0}",
+  "Còpies guardades en aquest ordinador": "Copias guardadas en este ordenador",
+  "Encara no hi ha cap còpia.": "Todavía no hay ninguna copia.",
+  "Fitxer": "Archivo",
+  "Mida": "Tamaño",
+  "Verifica": "Verificar",
+  "Descarrega": "Descargar",
+  "Còpia correcta": "Copia correcta",
+  "Es substituiran TOTES les dades actuals per les de la còpia «{0}» quan es reiniciï el programa. Les dades actuals es conservaran en un fitxer a part. Vols continuar?":
+    "Se sustituirán TODOS los datos actuales por los de la copia «{0}» cuando se reinicie el programa. Los datos actuales se conservarán en un archivo aparte. ¿Quieres continuar?",
+  "Còpia preparada: es restaurarà en reiniciar el programa.": "Copia preparada: se restaurará al reiniciar el programa.",
+  "Restaurar una còpia": "Restaurar una copia",
+  "Tria un fitxer de còpia (.db). Amb «Verifica» es comprova que és correcte i quantes dades conté, sense canviar res. Amb «Restaura» es prepara per substituir les dades actuals: es restaurarà en reiniciar el programa (tanca la finestra negra i torna a obrir Iniciar.bat).":
+    "Elige un archivo de copia (.db). Con «Verificar» se comprueba que es correcto y cuántos datos contiene, sin cambiar nada. Con «Restaurar» se prepara para sustituir los datos actuales: se restaurará al reiniciar el programa (cierra la ventana negra y vuelve a abrir Iniciar.bat).",
+  "Fitxer de còpia": "Archivo de copia",
+  "Verifica una còpia": "Verificar una copia",
+  "Restaura": "Restaurar",
+  "Comprovant el fitxer…": "Comprobando el archivo…",
+  "Restauració cancel·lada.": "Restauración cancelada.",
+  "Hi ha una còpia preparada per restaurar.": "Hay una copia preparada para restaurar.",
+  "Es restaurarà en reiniciar el programa: tanca la finestra negra del programa i torna a obrir Iniciar.bat.":
+    "Se restaurará al reiniciar el programa: cierra la ventana negra del programa y vuelve a abrir Iniciar.bat.",
+  "Cancel·la la restauració": "Cancelar la restauración",
+  // Registre d'activitat
+  "Entrada": "Inicio de sesión",
+  "Entrada fallida": "Inicio de sesión fallido",
+  "Descàrrega": "Descarga",
+  "Restauració": "Restauración",
+  // Avisos del tauler (server/avisos/operacions.ts)
+  "Encara no s’ha fet cap còpia de seguretat.": "Todavía no se ha hecho ninguna copia de seguridad.",
+  "Fa més de 7 dies que no es fa cap còpia de seguretat (la darrera és del {0}).": "Hace más de 7 días que no se hace ninguna copia de seguridad (la última es del {0}).",
+  "No s’ha pogut desar la còpia de seguretat a la carpeta externa {0}.": "No se ha podido guardar la copia de seguridad en la carpeta externa {0}.",
+  "Les còpies de seguretat només es guarden en aquest ordinador. Configura una carpeta externa (llapis USB o núvol).":
+    "Las copias de seguridad solo se guardan en este ordenador. Configura una carpeta externa (lápiz USB o nube).",
+};
+
+export const en: Record<string, string> = {
+  "Les còpies es desaran també a {0} ({1}).": "Backups will also be saved to {0} ({1}).",
+  "Hem trobat aquestes carpetes sincronitzades amb el núvol en aquest ordinador. Amb un clic, cada còpia diària es desarà també al núvol:": "We found these cloud-synced folders on this computer. With one click, every daily backup will also be saved to the cloud:",
+  "Desa-les a {0}": "Save them to {0}",
+  "Per desar les còpies a Google Drive, instal·la «Google Drive per a ordinadors» (google.com/drive/download) i inicia-hi sessió amb el compte de l'entitat; després torna aquí i apareixerà un botó per fer-ho servir.": "To save backups to Google Drive, install “Google Drive for desktop” (google.com/drive/download) and sign in with the organisation's account; then come back here and a button will appear to use it.",
+  'Versió {0}': 'Version {0}',
+  // Còpia de seguretat
+  "Moviments comptables": "Accounting entries",
+  "Reunions": "Meetings",
+  "Notícies de la web": "Website news",
+  "Còpia feta, però no s'ha pogut desar a la carpeta externa: {0}": "Backup made, but it could not be saved to the external folder: {0}",
+  "Còpia feta: {0}": "Backup made: {0}",
+  "Les còpies de seguretat no estan disponibles en aquesta versió.": "Backups are not available in this version.",
+  "Totes les dades es guarden en un únic fitxer en aquest ordinador. El programa en fa una còpia automàtica cada dia que s'obre i en conserva les dels darrers 7 dies i la primera de cada mes dels darrers 12 mesos. Perquè una avaria, un robatori o un virus no s'ho emportin tot, configura també una carpeta externa: un llapis USB o una carpeta sincronitzada amb el núvol (OneDrive, Google Drive…).":
+    "All the data is kept in a single file on this computer. The program makes an automatic backup every day it is opened and keeps those of the last 7 days and the first one of each month for the last 12 months. So that a breakdown, a theft or a virus does not take everything, also set up an external folder: a USB stick or a folder synced with the cloud (OneDrive, Google Drive…).",
+  "Darrera còpia": "Last backup",
+  "Encara no se n'ha fet cap.": "None has been made yet.",
+  "Carpeta de les còpies": "Backup folder",
+  "Versió del programa": "Program version",
+  "Error en la darrera còpia automàtica: {0}": "Error in the last automatic backup: {0}",
+  "Fent la còpia…": "Making the backup…",
+  "Fes una còpia ara": "Back up now",
+  "Les còpies contenen totes les dades. Les contrasenyes guardades (correu, FTP, certificat digital, xarxes socials) hi van xifrades amb una clau que és al fitxer «clau.key» de la carpeta {0}. Per recuperar-les en un altre ordinador, guarda també una còpia d'aquest fitxer en un lloc segur i separat; si no, només caldrà tornar-les a escriure.":
+    "Backups contain all the data. Saved passwords (email, FTP, digital certificate, social networks) are encrypted with a key stored in the file “clau.key” in the folder {0}. To recover them on another computer, also keep a copy of this file in a safe, separate place; otherwise you will just need to type them again.",
+  "La carpeta és accessible i s'hi pot escriure.": "The folder is accessible and writable.",
+  "Carpeta externa desada. La propera còpia s'hi desarà també.": "External folder saved. The next backup will also be saved there.",
+  "Carpeta externa eliminada.": "External folder removed.",
+  "Carpeta externa": "External folder",
+  "Cada còpia diària es desa també en aquesta carpeta. Escriu la ruta completa, per exemple «E:\\Còpies» (llapis USB) o «C:\\Users\\nom\\OneDrive\\Associació\\Còpies» (carpeta sincronitzada amb el núvol).":
+    "Each daily backup is also saved to this folder. Type the full path, for example “E:\\Backups” (USB stick) or “C:\\Users\\name\\OneDrive\\Association\\Backups” (folder synced with the cloud).",
+  "Ruta de la carpeta": "Folder path",
+  "Prova": "Test",
+  "La darrera còpia no s'ha pogut desar a la carpeta externa: {0}": "The last backup could not be saved to the external folder: {0}",
+  "Darrera còpia a la carpeta externa: {0}": "Last backup in the external folder: {0}",
+  "Còpies guardades en aquest ordinador": "Backups kept on this computer",
+  "Encara no hi ha cap còpia.": "There are no backups yet.",
+  "Fitxer": "File",
+  "Mida": "Size",
+  "Verifica": "Verify",
+  "Descarrega": "Download",
+  "Còpia correcta": "Valid backup",
+  "Es substituiran TOTES les dades actuals per les de la còpia «{0}» quan es reiniciï el programa. Les dades actuals es conservaran en un fitxer a part. Vols continuar?":
+    "ALL the current data will be replaced by that of the backup “{0}” when the program restarts. The current data will be kept in a separate file. Do you want to continue?",
+  "Còpia preparada: es restaurarà en reiniciar el programa.": "Backup ready: it will be restored when the program restarts.",
+  "Restaurar una còpia": "Restore a backup",
+  "Tria un fitxer de còpia (.db). Amb «Verifica» es comprova que és correcte i quantes dades conté, sense canviar res. Amb «Restaura» es prepara per substituir les dades actuals: es restaurarà en reiniciar el programa (tanca la finestra negra i torna a obrir Iniciar.bat).":
+    "Choose a backup file (.db). “Verify” checks that it is correct and how much data it contains, without changing anything. “Restore” prepares it to replace the current data: it will be restored when the program restarts (close the black window and open Iniciar.bat again).",
+  "Fitxer de còpia": "Backup file",
+  "Verifica una còpia": "Verify a backup",
+  "Restaura": "Restore",
+  "Comprovant el fitxer…": "Checking the file…",
+  "Restauració cancel·lada.": "Restore cancelled.",
+  "Hi ha una còpia preparada per restaurar.": "A backup is ready to be restored.",
+  "Es restaurarà en reiniciar el programa: tanca la finestra negra del programa i torna a obrir Iniciar.bat.":
+    "It will be restored when the program restarts: close the program's black window and open Iniciar.bat again.",
+  "Cancel·la la restauració": "Cancel the restore",
+  // Registre d'activitat
+  "Entrada": "Sign-in",
+  "Entrada fallida": "Failed sign-in",
+  "Descàrrega": "Download",
+  "Restauració": "Restore",
+  // Avisos del tauler (server/avisos/operacions.ts)
+  "Encara no s’ha fet cap còpia de seguretat.": "No backup has been made yet.",
+  "Fa més de 7 dies que no es fa cap còpia de seguretat (la darrera és del {0}).": "No backup has been made for more than 7 days (the last one is from {0}).",
+  "No s’ha pogut desar la còpia de seguretat a la carpeta externa {0}.": "The backup could not be saved to the external folder {0}.",
+  "Les còpies de seguretat només es guarden en aquest ordinador. Configura una carpeta externa (llapis USB o núvol).":
+    "Backups are only kept on this computer. Set up an external folder (USB stick or cloud).",
+};

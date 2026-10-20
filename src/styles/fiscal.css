@@ -1,0 +1,162 @@
+/* Mòdul fiscal: tercers, retencions, models i extractes bancaris. */
+
+.fiscal-seccions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+.fiscal-seccions button {
+  border: 1px solid var(--vora);
+  background: var(--superficie);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.fiscal-seccions button.actiu {
+  background: var(--olivera-suau);
+  border-color: var(--olivera);
+  color: var(--olivera);
+  font-weight: 600;
+}
+
+.fiscal-barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+.fiscal-barra .camp {
+  margin: 0;
+  min-width: 12rem;
+}
+.fiscal-barra input[type='search'] {
+  min-width: 16rem;
+}
+
+.fiscal-fila {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.fiscal-fila select {
+  flex: 1;
+  min-width: 0;
+}
+
+.fiscal-falta {
+  color: var(--negatiu);
+  font-size: 0.85em;
+}
+
+.fiscal-avis {
+  padding: 0.5rem 0.8rem;
+  border-left: 4px solid var(--ocre);
+  background: var(--ocre-suau);
+  border-radius: var(--radi);
+  margin: 0 0 1rem;
+}
+
+.fiscal-avis-legal {
+  margin-top: 1.5rem;
+  max-width: 60rem;
+}
+
+/* Càlcul base − retenció = net */
+.fiscal-calcul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radi);
+  background: var(--olivera-suau);
+}
+.fiscal-calcul-error {
+  background: var(--primari-suau);
+}
+
+/* Models */
+.fiscal-models .targeta {
+  overflow-x: auto;
+}
+.fiscal-models .taula {
+  margin-bottom: 0.5rem;
+}
+.fiscal-347 {
+  margin-top: 1rem;
+}
+.fiscal-csv {
+  width: 100%;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Extractes */
+.fiscal-casella {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.fiscal-mapa {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.5rem 1rem;
+}
+.fiscal-resultat {
+  border-top: 1px solid var(--vora);
+  padding-top: 0.8rem;
+}
+.fiscal-linies td {
+  vertical-align: top;
+}
+.fiscal-accions {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.fiscal-estat-pendent {
+  background: var(--ocre-suau);
+  color: var(--ocre);
+}
+.fiscal-estat-conciliat {
+  background: var(--olivera-suau);
+  color: var(--olivera);
+}
+.fiscal-estat-ignorat {
+  background: var(--fons);
+  color: var(--apagat);
+}
+.fiscal-linia-triada {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--fons);
+  border-radius: var(--radi);
+}
+.fiscal-crea {
+  border-top: 1px solid var(--vora);
+  padding-top: 0.6rem;
+}
+.fiscal-crea-camps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+@media (max-width: 640px) {
+  .fiscal-barra input[type='search'],
+  .fiscal-barra .camp {
+    min-width: 0;
+    width: 100%;
+  }
+  .fiscal-accions {
+    flex-wrap: wrap;
+  }
+}

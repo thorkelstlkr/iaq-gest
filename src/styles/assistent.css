@@ -1,0 +1,384 @@
+/* ---------- Assistent de primera configuració ---------- */
+
+.acces-targeta.assistent {
+  max-width: 760px;
+  gap: 1rem;
+}
+.assistent-titol {
+  font-size: 1.6rem;
+  outline: none;
+}
+.assistent-cos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.assistent-cos p {
+  margin: 0;
+}
+.assistent-llista {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+.assistent-llista li + li {
+  margin-top: 0.2rem;
+}
+
+/* Indicador de passos */
+.assistent-comptador {
+  font-size: 0.82rem;
+  color: var(--apagat);
+  margin: 0 0 0.4rem;
+}
+.assistent-passos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.3rem;
+}
+.assistent-passos li {
+  flex: 1;
+  min-width: 0;
+}
+.assistent-passos button,
+.assistent-pas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+  padding: 0.3rem 0.1rem;
+  border: 0;
+  border-top: 3px solid var(--vora);
+  background: none;
+  font: inherit;
+  font-size: 0.78rem;
+  color: var(--apagat);
+  text-align: center;
+}
+.assistent-passos button {
+  cursor: pointer;
+}
+.assistent-passos button:hover .assistent-nom-pas {
+  text-decoration: underline;
+}
+.assistent-passos .fet button {
+  border-top-color: var(--olivera);
+  color: var(--text);
+}
+.assistent-passos .actual .assistent-pas {
+  border-top-color: var(--primari);
+  color: var(--text);
+  font-weight: 600;
+}
+.assistent-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--vora);
+  background: var(--superficie);
+  font-weight: 600;
+}
+.assistent-passos .fet .assistent-num {
+  background: var(--olivera-suau);
+  border-color: var(--olivera);
+  color: var(--olivera);
+}
+.assistent-passos .actual .assistent-num {
+  background: var(--primari);
+  border-color: var(--primari);
+  color: #fff;
+}
+.assistent-nom-pas {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* Idioma al pas de benvinguda */
+.assistent-idioma .selector-idioma {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.assistent-idioma .selector-idioma button {
+  font-size: 0.95rem;
+  padding: 0.35rem 0.8rem;
+  border-color: var(--vora);
+}
+.assistent-idioma .selector-idioma button.actiu {
+  border-color: var(--primari);
+  background: var(--primari-suau);
+}
+
+/* Llicència */
+.assistent-llicencia {
+  white-space: pre-wrap;
+  overflow-y: auto;
+  max-height: 340px;
+  background: #fff;
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 1rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.assistent-llicencia:focus-visible {
+  outline: 2px solid var(--primari);
+  outline-offset: 2px;
+}
+.assistent-check {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.assistent-check input {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0;
+}
+
+/* Logotip: input de fitxer amagat però accessible amb el teclat */
+.assistent-fitxer {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+.camp-foto-accions label.boto {
+  position: relative;
+}
+.camp-foto-accions label.boto:focus-within {
+  outline: 2px solid var(--primari);
+  outline-offset: 2px;
+}
+
+/* Fortalesa de la contrasenya */
+.assistent-fortalesa {
+  gap: 0.3rem;
+}
+.assistent-barra {
+  display: flex;
+  gap: 4px;
+  max-width: 240px;
+}
+.assistent-barra span {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--vora);
+}
+.assistent-barra.nivell-1 span:nth-child(-n + 1) {
+  background: var(--negatiu);
+}
+.assistent-barra.nivell-2 span:nth-child(-n + 2) {
+  background: var(--ocre);
+}
+.assistent-barra.nivell-3 span {
+  background: var(--positiu);
+}
+
+/* Persones clau */
+.acces-targeta fieldset.assistent-persona {
+  background: var(--superficie);
+}
+.assistent-contrasenya {
+  display: flex;
+  gap: 0.4rem;
+  align-items: stretch;
+}
+.assistent-contrasenya input {
+  flex: 1;
+  min-width: 0;
+  font-family: ui-monospace, Consolas, monospace;
+}
+.assistent-contrasenya .boto {
+  white-space: nowrap;
+}
+.assistent-treu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Resum */
+.assistent-resum {
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+  padding: 0.8rem 1rem;
+}
+.assistent-resum header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+.assistent-resum h2 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+.assistent-resum dl {
+  display: grid;
+  grid-template-columns: minmax(120px, max-content) 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+}
+.assistent-resum dt {
+  color: var(--apagat);
+}
+.assistent-resum dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.assistent-resum-entitat {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.assistent-persones-resum {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.assistent-acceptada {
+  color: var(--positiu);
+}
+
+/* Botons d'avançar i tornar */
+.assistent-botons {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+.acces-targeta .assistent-botons .boto {
+  min-width: 7rem;
+}
+
+/* Pantalla final */
+.assistent-progres {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--vora);
+  border-radius: var(--radi);
+}
+.assistent-progres li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.9rem;
+}
+.assistent-progres li + li {
+  border-top: 1px solid var(--vora);
+}
+.assistent-progres li > span:last-child {
+  text-align: right;
+}
+.assistent-ok {
+  color: var(--positiu);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.assistent-avis-error {
+  border: 1px solid var(--negatiu);
+  border-radius: var(--radi);
+  background: #fdf1ef;
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+.acces-targeta fieldset.assistent-avis-error {
+  display: grid;
+  border-color: var(--negatiu);
+  align-items: end;
+}
+.assistent-credencials-bloc,
+.assistent-seguents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.assistent-credencials-bloc h2,
+.assistent-seguents h2 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+.document.assistent-credencials {
+  padding: 1.25rem 1.5rem;
+  max-width: none;
+}
+.assistent-credencials .document-cap {
+  margin-bottom: 1rem;
+}
+.assistent-credencials .document-cap h2 {
+  margin-top: 0.4rem;
+}
+.assistent-credencials code {
+  font-size: 0.95rem;
+  user-select: all;
+}
+.assistent-credencials p {
+  margin-top: 1rem;
+}
+
+/* Avís per acceptar la llicència (instal·lacions anteriors) */
+.avis-llicencia-cos {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.avis-llicencia-cos p {
+  margin: 0;
+}
+.avis-llicencia .assistent-llicencia {
+  max-height: min(50vh, 420px);
+}
+
+/* Mòbil */
+@media (max-width: 560px) {
+  .acces:has(> .assistent) {
+    padding: 0.75rem 0.5rem;
+    align-items: flex-start;
+  }
+  .acces-targeta.assistent {
+    padding: 1.1rem 1rem;
+  }
+  .assistent-nom-pas {
+    display: none;
+  }
+  .assistent-resum dl {
+    grid-template-columns: 1fr;
+    gap: 0 0;
+  }
+  .assistent-resum dd {
+    margin-bottom: 0.4rem;
+  }
+  .assistent-resum-entitat {
+    flex-direction: column;
+  }
+  .assistent-botons .boto {
+    flex: 1;
+  }
+  .assistent-botons .espai {
+    display: none;
+  }
+  .document.assistent-credencials {
+    padding: 1rem;
+  }
+}
