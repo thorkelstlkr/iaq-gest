@@ -50,12 +50,21 @@ export function MenuLateral({ grups }: { grups: GrupMenu[] }) {
     }
   }, [oberts]);
 
+  // Al mòbil el menú obert ocupa tota la pantalla (classe al body: vegeu styles.css) i es tanca amb Esc.
+  useEffect(() => {
+    document.body.classList.toggle('menu-mobil-obert', mobilObert);
+    if (!mobilObert) return;
+    const esc = (e: KeyboardEvent) => e.key === 'Escape' && setMobilObert(false);
+    window.addEventListener('keydown', esc);
+    return () => window.removeEventListener('keydown', esc);
+  }, [mobilObert]);
+
   const commuta = (id: string) => setOberts((o) => (o.includes(id) ? o.filter((x) => x !== id) : [...o, id]));
 
   return (
     <>
       <button type="button" className="menu-mobil-boto" aria-expanded={mobilObert} aria-controls="menu-principal" onClick={() => setMobilObert(!mobilObert)}>
-        ☰ {t("Menú")}
+        {mobilObert ? `✕ ${t("Tanca")}` : `☰ ${t("Menú")}`}
       </button>
       <nav id="menu-principal" className={`menu-principal${mobilObert ? ' obert' : ''}`} aria-label={t("Menú principal")}>
         {grups.map((g) => {

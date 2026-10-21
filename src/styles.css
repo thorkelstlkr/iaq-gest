@@ -760,29 +760,6 @@ input:disabled {
   .app {
     grid-template-columns: 1fr;
   }
-  .lateral {
-    position: static;
-    height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-  }
-  .lateral nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    order: 3;
-    width: 100%;
-  }
-  .lateral nav a {
-    padding: 0.35rem 0.6rem;
-  }
-  .selector-exercici {
-    margin: 0 0 0 auto;
-    flex-direction: row;
-    align-items: center;
-  }
   .contingut {
     padding: 1.25rem 1rem 3rem;
   }
@@ -1110,20 +1087,6 @@ label.boto {
 .marca .logo-imatge {
   object-fit: cover;
   background: #fff;
-}
-@media (max-width: 900px) {
-  .menu-grup {
-    display: contents;
-  }
-  .lateral-peu {
-    margin: 0 0 0 auto;
-    flex-direction: row;
-    align-items: center;
-  }
-  .sessio {
-    border: 0;
-    padding: 0;
-  }
 }
 
 /* ---------- Accés ---------- */
@@ -2282,27 +2245,6 @@ pre.xml {
 .menu-mobil-boto {
   display: none;
 }
-@media (max-width: 900px) {
-  .menu-mobil-boto {
-    display: inline-block;
-    order: 2;
-    background: rgb(255 255 255 / 0.08);
-    color: #efe6da;
-    border: 1px solid rgb(255 255 255 / 0.15);
-    border-radius: 8px;
-    padding: 0.4rem 0.8rem;
-    font: inherit;
-    cursor: pointer;
-  }
-  .menu-principal {
-    display: none;
-    order: 3;
-    width: 100%;
-  }
-  .menu-principal.obert {
-    display: flex;
-  }
-}
 
 /* Botó d'ajuda contextual a la capçalera de cada pantalla */
 .boto-ajuda {
@@ -2323,4 +2265,86 @@ pre.xml {
 }
 .menu-categoria-elements[hidden] {
   display: none;
+}
+
+/* ---------- Mòbil: barra superior prima i menú a pantalla completa ---------- */
+@media (max-width: 900px) {
+  .lateral {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    padding: 0.5rem 0.9rem;
+    overflow: visible;
+  }
+  .lateral .marca {
+    padding: 0;
+    min-width: 0;
+  }
+  .lateral .marca small {
+    display: none;
+  }
+  .lateral .marca strong {
+    font-size: 1.02rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lateral .marca-logo,
+  .lateral .marca .logo-imatge {
+    width: 34px;
+    height: 34px;
+    font-size: 1.3rem;
+    line-height: 34px;
+  }
+  .menu-mobil-boto {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: rgb(255 255 255 / 0.08);
+    color: #efe6da;
+    border: 1px solid rgb(255 255 255 / 0.18);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    font: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  /* Tancat: només la barra (marca + botó). */
+  .lateral .menu-principal,
+  .lateral .lateral-peu {
+    display: none;
+  }
+  /* Obert: la barra lateral ocupa tota la pantalla, amb el menú, l'exercici, l'idioma i la sessió. */
+  body.menu-mobil-obert {
+    overflow: hidden;
+  }
+  body.menu-mobil-obert .lateral {
+    position: fixed;
+    inset: 0;
+    align-content: start;
+    overflow-y: auto;
+    padding-bottom: 1.5rem;
+  }
+  body.menu-mobil-obert .lateral .menu-principal {
+    display: flex;
+    grid-column: 1 / -1;
+    margin-top: 0.4rem;
+  }
+  body.menu-mobil-obert .lateral .lateral-peu {
+    display: flex;
+    grid-column: 1 / -1;
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgb(255 255 255 / 0.1);
+  }
+  .menu-principal a,
+  .menu-categoria-cap {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
 }
