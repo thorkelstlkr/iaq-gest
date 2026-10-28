@@ -5,7 +5,7 @@ import { textLlicencia } from '../shared/llicencia.ts';
 
 mkdirSync('build', { recursive: true });
 for (const idioma of ['ca', 'es', 'en'] as const) {
-  // BOM UTF-8 perquè l'instal·lador de Windows mostri bé els accents.
-  writeFileSync(`build/license_${idioma}.txt`, `\uFEFF${textLlicencia(idioma).replace(/\n/g, '\r\n')}`, 'utf8');
+  // BOM UTF-8 perquè l'instal·lador de Windows mostri bé els accents (el DMG del Mac no l'accepta: --sense-bom).
+  writeFileSync(`build/license_${idioma}.txt`, `${process.argv.includes('--sense-bom') ? '' : '\uFEFF'}${textLlicencia(idioma).replace(/\n/g, '\r\n')}`, 'utf8');
 }
 console.log('Llicències generades a build/.');
