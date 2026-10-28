@@ -1,5 +1,25 @@
 {
- "_iguals": ["website", "es_ES", "summary_large_image", "IAQ Gest", "MCP", "Claude", "ChatGPT", "Gemini", "Copilot", "Cursor", "MCP (Model Context Protocol)", "Windows", "macOS", "Linux", "GitHub", "Demo", "Open source", "RGPD", "Inventari"],
+ "_iguals": [
+  "website",
+  "es_ES",
+  "summary_large_image",
+  "IAQ Gest",
+  "MCP",
+  "Claude",
+  "ChatGPT",
+  "Gemini",
+  "Copilot",
+  "Cursor",
+  "MCP (Model Context Protocol)",
+  "Windows",
+  "macOS",
+  "Linux",
+  "GitHub",
+  "Demo",
+  "Open source",
+  "RGPD",
+  "Inventari"
+ ],
  "IAQ Gest · Gestión de asociaciones con IA (MCP), gratis y open source": "IAQ Gest · Gestió d'associacions amb IA (MCP), gratuïta i de codi obert",
  "Programa gratuito y de código abierto (MIT) para gestionar asociaciones sin ánimo de lucro con tu asistente de IA (Claude, ChatGPT…) gracias a MCP.": "Programa gratuït i de codi obert (MIT) per gestionar associacions sense ànim de lucre amb el teu assistent d'IA (Claude, ChatGPT…) gràcies a MCP.",
  "IAQ Gest · Gestiona tu asociación hablando con tu asistente de IA": "IAQ Gest · Gestiona la teva associació parlant amb el teu assistent d'IA",
@@ -116,5 +136,6 @@
  "Software libre bajo": "Programari lliure amb",
  "licencia MIT": "llicència MIT",
  ". Creado por la Associació I ara qué? (Pollença, Mallorca).": ". Creat per l'Associació I ara qué? (Pollença, Mallorca).",
- "Descargas": "Descàrregues"
+ "Descargas": "Descàrregues",
+ "Una persona consulta IAQ Gest en el móvil en una terraza, junto a un café y una libreta con la planificación de la asociación": "Una persona consulta IAQ Gest al mòbil en una terrassa, al costat d'un cafè i una llibreta amb la planificació de l'associació"
 }

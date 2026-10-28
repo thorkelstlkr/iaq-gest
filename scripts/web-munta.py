@@ -104,7 +104,7 @@ for codi, (_, locale, carpeta) in IDIOMES.items():
         doc = tradueix(doc, dicc, falten)
         falten -= iguals
         doc = doc.replace('<html lang="es">', f'<html lang="{codi}">')
-        doc = re.sub(r'(href|src)="(?!https?:|#|/|\.\./)([^"]+)"', r'\1="../\2"', doc)
+        doc = re.sub(r'(href|src|srcset)="(?!https?:|#|/|\.\./)([^"]+)"', r'\1="../\2"', doc)
         doc = doc.replace(f'href="{URL}" />', f'href="{URL}{carpeta}" />', 1)  # canonical
         doc = doc.replace(f'content="{URL}"', f'content="{URL}{carpeta}"')  # og:url
         doc = doc.replace('content="es_ES"', f'content="{locale}"')
