@@ -12,6 +12,7 @@ import { ARTICLES, GLOSSARI, PREGUNTES, SECCIONS, articlePerId, cerca, tx } from
 import { NOVETATS } from '../ajuda/novetats';
 import { PERFILS } from '../../shared/permisos';
 import type { Article, IdSeccio } from '../ajuda/tipus';
+import { IconaApp } from '../components/IconaApp';
 import '../styles/ajuda.css';
 
 const NOMS_SECCIONS = (): Record<IdSeccio, string> => ({
@@ -319,7 +320,13 @@ function QuantA() {
   return (
     <div className="ajuda-quant-a">
       <section className="targeta">
-        <h2>{t("Quant al programa")}</h2>
+        <div className="quant-a-cap">
+          <IconaApp mida={64} />
+          <div>
+            <h2>{t("Quant al programa")}</h2>
+            <strong>I ara qué? · Gestió</strong>
+          </div>
+        </div>
         <p>
           {t("Programa de gestió per a associacions sense ànim de lucre: socis, economia, activitats, web, òrgans de govern i compliment legal. Funciona a l'ordinador de l'entitat i les dades no surten d'aquí si no ho decidiu vosaltres.")}
         </p>

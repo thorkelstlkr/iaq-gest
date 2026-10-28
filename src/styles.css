@@ -2348,3 +2348,21 @@ pre.xml {
     padding-bottom: 0.6rem;
   }
 }
+
+/* ---------- Icona del programa ---------- */
+.icona-app {
+  display: block;
+  flex: none;
+}
+.acces-targeta > .icona-app {
+  align-self: center;
+}
+.quant-a-cap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+.quant-a-cap h2 {
+  margin: 0;
+}

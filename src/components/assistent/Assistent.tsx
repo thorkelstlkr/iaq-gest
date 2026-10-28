@@ -15,6 +15,7 @@ import {
   rolDeCarrec, suggereixUsuari,
 } from './estat';
 import type { Carrec, DadesEntitat, EstatAssistent, Persona } from './estat';
+import { IconaApp } from '../IconaApp';
 import '../../styles/assistent.css';
 
 const PASSOS = [t("Benvinguda"), t("Llicència"), t("L'entitat"), t("Administració"), t("Persones clau"), t("Resum")];
@@ -202,6 +203,7 @@ export function Assistent({ onEntrat }: { onEntrat: () => void }) {
   return (
     <div className="acces">
       <form className="acces-targeta assistent" onSubmit={envia} noValidate>
+        <IconaApp mida={44} />
         <Passos actual={pas} onVesA={(n) => n < pas && vesA(n)} />
         <h1 className="assistent-titol" ref={titol} tabIndex={-1}>
           {PASSOS[pas]}
