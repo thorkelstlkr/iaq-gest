@@ -391,8 +391,8 @@ function Instruccions({ connexio, clau }: { connexio: Connexio; clau: string | n
             'Claude Desktop': {
               mcpServers: {
                 iaraque: {
-                  command: '%LOCALAPPDATA%\\Programs\\I ara qué Gestió\\I ara qué Gestió.exe',
-                  args: ['%LOCALAPPDATA%\\Programs\\I ara qué Gestió\\resources\\app\\scripts\\mcp.ts'],
+                  command: '%LOCALAPPDATA%\\Programs\\IAQ Gest\\IAQ Gest.exe',
+                  args: ['%LOCALAPPDATA%\\Programs\\IAQ Gest\\resources\\app\\scripts\\mcp.ts'],
                   env: { ELECTRON_RUN_AS_NODE: '1', IARAQUE_CLAU: CLAU, IARAQUE_URL: remot },
                 },
               },

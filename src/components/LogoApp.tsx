@@ -4,5 +4,5 @@ import clar from '../assets/logo-clar.png?inline';
 import fosc from '../assets/logo-fosc.png?inline';
 
 export function LogoApp({ versio, alcada }: { versio: 'clar' | 'fosc'; alcada: number }) {
-  return <img src={versio === 'clar' ? clar : fosc} alt="I ara qué? Gestió" height={alcada} className="logo-app" />;
+  return <img src={versio === 'clar' ? clar : fosc} alt="IAQ Gest" height={alcada} className="logo-app" />;
 }

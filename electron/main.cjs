@@ -13,9 +13,21 @@ const net = require('node:net');
 const os = require('node:os');
 const { pathToFileURL } = require('node:url');
 
-const NOM = 'I ara qué Gestió';
+const NOM = 'IAQ Gest';
 app.setName(NOM);
-app.setPath('userData', path.join(app.getPath('appData'), NOM));
+// Fins a la 1.0.0 el programa es deia «I ara qué Gestió»: se'n trasllada la carpeta de dades (o, si no es pot, s'hi continua treballant).
+const DIR_USUARI = (() => {
+  const nou = path.join(app.getPath('appData'), NOM);
+  const antic = path.join(app.getPath('appData'), 'I ara qué Gestió');
+  if (fs.existsSync(nou) || !fs.existsSync(antic)) return nou;
+  try {
+    fs.renameSync(antic, nou);
+    return nou;
+  } catch {
+    return antic;
+  }
+})();
+app.setPath('userData', DIR_USUARI);
 
 const DIR_APP = app.getAppPath();
 const DIR_DADES = path.join(app.getPath('userData'), 'dades');

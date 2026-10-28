@@ -63,7 +63,7 @@
   "main": "electron/main.cjs",
   "build": {
     "appId": "org.iaraque.gestio",
-    "productName": "I ara qué Gestió",
+    "productName": "IAQ Gest",
     "copyright": "© 2026 Associació I ara qué? — Llicència MIT",
     "directories": {
       "output": "release",
@@ -98,7 +98,7 @@
         }
       ],
       "icon": "build/icon.png",
-      "artifactName": "I-ara-que-Gestio-${version}-Windows.${ext}"
+      "artifactName": "IAQ-Gest-${version}-Windows.${ext}"
     },
     "nsis": {
       "oneClick": false,
@@ -107,7 +107,7 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "I ara qué Gestió",
+      "shortcutName": "IAQ Gest",
       "multiLanguageInstaller": true,
       "displayLanguageSelector": true,
       "installerLanguages": [
@@ -125,7 +125,7 @@
       ],
       "icon": "build/icon.png",
       "category": "public.app-category.business",
-      "artifactName": "I-ara-que-Gestio-${version}-Mac-${arch}.${ext}"
+      "artifactName": "IAQ-Gest-${version}-Mac-${arch}.${ext}"
     },
     "linux": {
       "target": [
@@ -136,7 +136,7 @@
       "category": "Office",
       "maintainer": "Associació I ara qué?",
       "synopsis": "Gestió per a associacions",
-      "artifactName": "I-ara-que-Gestio-${version}-Linux-${arch}.${ext}"
+      "artifactName": "IAQ-Gest-${version}-Linux-${arch}.${ext}"
     },
     "deb": {
       "depends": [

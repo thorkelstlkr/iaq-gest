@@ -9,6 +9,14 @@ export interface Novetat {
 
 export const NOVETATS: Novetat[] = [
   {
+    data: '2026-10-28',
+    titol: { ca: 'Nou nom, icona i logotip: IAQ Gest', es: 'Nuevo nombre, icono y logotipo: IAQ Gest', en: 'New name, icon and logo: IAQ Gest' },
+    punts: [
+      { ca: 'El programa passa a dir-se IAQ Gest, amb icona i logotip nous. Les dades de les instal·lacions anteriors es traslladen soles a la carpeta nova.', es: 'El programa pasa a llamarse IAQ Gest, con icono y logotipo nuevos. Los datos de las instalaciones anteriores se trasladan solos a la carpeta nueva.', en: 'The program is now called IAQ Gest, with a new icon and logo. Data from earlier installations moves to the new folder automatically.' },
+      { ca: 'Al mòbil, el menú queda en una barra superior prima i s’obre a pantalla completa.', es: 'En el móvil, el menú queda en una barra superior fina y se abre a pantalla completa.', en: 'On mobile, the menu sits in a slim top bar and opens full screen.' },
+    ],
+  },
+  {
     data: '2026-10-20',
     titol: { ca: 'Instal·lador per a Windows, Mac i Linux', es: 'Instalador para Windows, Mac y Linux', en: 'Installer for Windows, Mac and Linux' },
     punts: [

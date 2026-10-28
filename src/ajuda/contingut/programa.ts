@@ -367,9 +367,9 @@ Al costat del rellotge (a la safata del sistema de Windows, a la barra de menús
 
 Totes les dades (la base de dades, el fitxer de clau clau.key i les còpies automàtiques, a la subcarpeta copies) són a la **carpeta de dades**:
 
-- Windows: %APPDATA%\\I ara qué Gestió\\dades
-- Mac: ~/Library/Application Support/I ara qué Gestió/dades
-- Linux: ~/.config/I ara qué Gestió/dades
+- Windows: %APPDATA%\\IAQ Gest\\dades
+- Mac: ~/Library/Application Support/IAQ Gest/dades
+- Linux: ~/.config/IAQ Gest/dades
 
 La manera més fàcil d'arribar-hi és el menú de la icona → **Obre la carpeta de dades**. Desinstal·lar el programa **no esborra** aquesta carpeta. Vegeu també [Còpies de seguretat i restauració](/ajuda/copies-seguretat).
 
@@ -435,9 +435,9 @@ Junto al reloj (en la bandeja del sistema de Windows, en la barra de menús del 
 
 Todos los datos (la base de datos, el archivo de clave clau.key y las copias automáticas, en la subcarpeta copies) están en la **carpeta de datos**:
 
-- Windows: %APPDATA%\\I ara qué Gestió\\dades
-- Mac: ~/Library/Application Support/I ara qué Gestió/dades
-- Linux: ~/.config/I ara qué Gestió/dades
+- Windows: %APPDATA%\\IAQ Gest\\dades
+- Mac: ~/Library/Application Support/IAQ Gest/dades
+- Linux: ~/.config/IAQ Gest/dades
 
 La forma más fácil de llegar es el menú del icono → **Abrir la carpeta de datos**. Desinstalar el programa **no borra** esta carpeta. Véase también [Copias de seguridad y restauración](/ajuda/copies-seguretat).
 
@@ -503,9 +503,9 @@ Next to the clock (in the Windows system tray, the Mac menu bar or the Linux tra
 
 All the data (the database, the clau.key key file and the automatic backups, in the copies subfolder) is in the **data folder**:
 
-- Windows: %APPDATA%\\I ara qué Gestió\\dades
-- Mac: ~/Library/Application Support/I ara qué Gestió/dades
-- Linux: ~/.config/I ara qué Gestió/dades
+- Windows: %APPDATA%\\IAQ Gest\\dades
+- Mac: ~/Library/Application Support/IAQ Gest/dades
+- Linux: ~/.config/IAQ Gest/dades
 
 The easiest way to get there is the icon's menu → **Open data folder**. Uninstalling the program **does not delete** this folder. See also [Backups and restoring](/ajuda/copies-seguretat).
 
@@ -1742,9 +1742,9 @@ Cada dia que el programa està en marxa se'n fa una còpia automàtica a la subc
 
 La base de dades, el fitxer clau.key i les còpies automàtiques són a la carpeta de dades del programa, en aquest ordinador:
 
-- Windows: %APPDATA%\\I ara qué Gestió\\dades
-- Mac: ~/Library/Application Support/I ara qué Gestió/dades
-- Linux: ~/.config/I ara qué Gestió/dades
+- Windows: %APPDATA%\\IAQ Gest\\dades
+- Mac: ~/Library/Application Support/IAQ Gest/dades
+- Linux: ~/.config/IAQ Gest/dades
 
 Per obrir-la, fes servir el menú de la **icona del programa** (al costat del rellotge) → **Obre la carpeta de dades**. Desinstal·lar o actualitzar el programa no l'esborra.
 
@@ -1789,9 +1789,9 @@ Cada día que el programa está en marcha se hace una copia automática en la su
 
 La base de datos, el archivo clau.key y las copias automáticas están en la carpeta de datos del programa, en este ordenador:
 
-- Windows: %APPDATA%\\I ara qué Gestió\\dades
-- Mac: ~/Library/Application Support/I ara qué Gestió/dades
-- Linux: ~/.config/I ara qué Gestió/dades
+- Windows: %APPDATA%\\IAQ Gest\\dades
+- Mac: ~/Library/Application Support/IAQ Gest/dades
+- Linux: ~/.config/IAQ Gest/dades
 
 Para abrirla, usa el menú del **icono del programa** (junto al reloj) → **Abrir la carpeta de datos**. Desinstalar o actualizar el programa no la borra.
 
@@ -1836,9 +1836,9 @@ Every day the program is running, an automatic backup is made in the **copies** 
 
 The database, the clau.key file and the automatic backups are in the program's data folder, on this computer:
 
-- Windows: %APPDATA%\\I ara qué Gestió\\dades
-- Mac: ~/Library/Application Support/I ara qué Gestió/dades
-- Linux: ~/.config/I ara qué Gestió/dades
+- Windows: %APPDATA%\\IAQ Gest\\dades
+- Mac: ~/Library/Application Support/IAQ Gest/dades
+- Linux: ~/.config/IAQ Gest/dades
 
 To open it, use the menu of the **program's icon** (next to the clock) → **Open data folder**. Uninstalling or updating the program does not delete it.
 
@@ -2044,9 +2044,9 @@ Hi ha una manera de crear o restablir un usuari d'administració, però **cal al
 2. Obre una finestra d'ordres: a Windows, el **Símbol del sistema**; al Mac i a Linux, el **Terminal**.
 3. Executa el programa amb --restableix-admin, el nom d'usuari i la contrasenya nova. Per exemple, per a l'usuari thorkel:
 
-- **Windows**: "%LOCALAPPDATA%\\Programs\\I ara qué Gestió\\I ara qué Gestió.exe" --restableix-admin thorkel NovaContrasenya123 (si es va instal·lar per a tots els usuaris de l'ordinador, la ruta comença per C:\\Program Files\\I ara qué Gestió\\).
-- **Mac**: "/Applications/I ara qué Gestió.app/Contents/MacOS/I ara qué Gestió" --restableix-admin thorkel NovaContrasenya123
-- **Linux (AppImage)**: des de la carpeta on hi ha el fitxer, ./I-ara-que-Gestio.AppImage --restableix-admin thorkel NovaContrasenya123
+- **Windows**: "%LOCALAPPDATA%\\Programs\\IAQ Gest\\IAQ Gest.exe" --restableix-admin thorkel NovaContrasenya123 (si es va instal·lar per a tots els usuaris de l'ordinador, la ruta comença per C:\\Program Files\\IAQ Gest\\).
+- **Mac**: "/Applications/IAQ Gest.app/Contents/MacOS/IAQ Gest" --restableix-admin thorkel NovaContrasenya123
+- **Linux (AppImage)**: des de la carpeta on hi ha el fitxer, ./IAQ-Gest.AppImage --restableix-admin thorkel NovaContrasenya123
 
 Després, torna a obrir el programa i entra amb aquest usuari i la contrasenya nova (i canvia-la per una de pròpia).
 
@@ -2088,9 +2088,9 @@ Hay una forma de crear o restablecer un usuario de administración, pero **hace 
 2. Abre una ventana de órdenes: en Windows, el **Símbolo del sistema**; en el Mac y en Linux, el **Terminal**.
 3. Ejecuta el programa con --restableix-admin, el nombre de usuario y la contraseña nueva. Por ejemplo, para el usuario thorkel:
 
-- **Windows**: "%LOCALAPPDATA%\\Programs\\I ara qué Gestió\\I ara qué Gestió.exe" --restableix-admin thorkel NovaContrasenya123 (si se instaló para todos los usuarios del ordenador, la ruta empieza por C:\\Program Files\\I ara qué Gestió\\).
-- **Mac**: "/Applications/I ara qué Gestió.app/Contents/MacOS/I ara qué Gestió" --restableix-admin thorkel NovaContrasenya123
-- **Linux (AppImage)**: desde la carpeta donde está el archivo, ./I-ara-que-Gestio.AppImage --restableix-admin thorkel NovaContrasenya123
+- **Windows**: "%LOCALAPPDATA%\\Programs\\IAQ Gest\\IAQ Gest.exe" --restableix-admin thorkel NovaContrasenya123 (si se instaló para todos los usuarios del ordenador, la ruta empieza por C:\\Program Files\\IAQ Gest\\).
+- **Mac**: "/Applications/IAQ Gest.app/Contents/MacOS/IAQ Gest" --restableix-admin thorkel NovaContrasenya123
+- **Linux (AppImage)**: desde la carpeta donde está el archivo, ./IAQ-Gest.AppImage --restableix-admin thorkel NovaContrasenya123
 
 Después, vuelve a abrir el programa y entra con ese usuario y la contraseña nueva (y cámbiala por una propia).
 
@@ -2132,9 +2132,9 @@ There is a way to create or reset an administrator user, but **it needs someone 
 2. Open a command window: on Windows, **Command Prompt**; on a Mac or Linux, **Terminal**.
 3. Run the program with --restableix-admin, the username and the new password. For example, for the user thorkel:
 
-- **Windows**: "%LOCALAPPDATA%\\Programs\\I ara qué Gestió\\I ara qué Gestió.exe" --restableix-admin thorkel NovaContrasenya123 (if it was installed for all users of the computer, the path starts with C:\\Program Files\\I ara qué Gestió\\).
-- **Mac**: "/Applications/I ara qué Gestió.app/Contents/MacOS/I ara qué Gestió" --restableix-admin thorkel NovaContrasenya123
-- **Linux (AppImage)**: from the folder containing the file, ./I-ara-que-Gestio.AppImage --restableix-admin thorkel NovaContrasenya123
+- **Windows**: "%LOCALAPPDATA%\\Programs\\IAQ Gest\\IAQ Gest.exe" --restableix-admin thorkel NovaContrasenya123 (if it was installed for all users of the computer, the path starts with C:\\Program Files\\IAQ Gest\\).
+- **Mac**: "/Applications/IAQ Gest.app/Contents/MacOS/IAQ Gest" --restableix-admin thorkel NovaContrasenya123
+- **Linux (AppImage)**: from the folder containing the file, ./IAQ-Gest.AppImage --restableix-admin thorkel NovaContrasenya123
 
 Then open the program again and sign in with that user and the new password (and change it to one of your own).
 
@@ -2297,9 +2297,9 @@ export const PREGUNTES: Pregunta[] = [
       en: 'Where is my data?',
     },
     resposta: {
-      ca: `A la carpeta de dades del programa, en aquest ordinador: a Windows, %APPDATA%\\I ara qué Gestió\\dades; al Mac, ~/Library/Application Support/I ara qué Gestió/dades; a Linux, ~/.config/I ara qué Gestió/dades. S'obre fàcilment amb la icona del costat del rellotge → Obre la carpeta de dades. No s'envien a cap servidor d'internet (només la web pública, quan la publiqueu), i desinstal·lar el programa no les esborra. Per això són tan importants les còpies a una carpeta externa i guardar el fitxer clau.key.`,
-      es: `En la carpeta de datos del programa, en este ordenador: en Windows, %APPDATA%\\I ara qué Gestió\\dades; en el Mac, ~/Library/Application Support/I ara qué Gestió/dades; en Linux, ~/.config/I ara qué Gestió/dades. Se abre fácilmente con el icono junto al reloj → Abrir la carpeta de datos. No se envían a ningún servidor de internet (solo la web pública, cuando la publicáis), y desinstalar el programa no los borra. Por eso son tan importantes las copias en una carpeta externa y guardar el archivo clau.key.`,
-      en: `In the program's data folder, on this computer: on Windows, %APPDATA%\\I ara qué Gestió\\dades; on a Mac, ~/Library/Application Support/I ara qué Gestió/dades; on Linux, ~/.config/I ara qué Gestió/dades. You can open it easily with the icon next to the clock → Open data folder. Nothing is sent to an internet server (only the public website, when you publish it), and uninstalling the program does not delete it. That is why backups to an external folder and keeping the clau.key file are so important.`,
+      ca: `A la carpeta de dades del programa, en aquest ordinador: a Windows, %APPDATA%\\IAQ Gest\\dades; al Mac, ~/Library/Application Support/IAQ Gest/dades; a Linux, ~/.config/IAQ Gest/dades. S'obre fàcilment amb la icona del costat del rellotge → Obre la carpeta de dades. No s'envien a cap servidor d'internet (només la web pública, quan la publiqueu), i desinstal·lar el programa no les esborra. Per això són tan importants les còpies a una carpeta externa i guardar el fitxer clau.key.`,
+      es: `En la carpeta de datos del programa, en este ordenador: en Windows, %APPDATA%\\IAQ Gest\\dades; en el Mac, ~/Library/Application Support/IAQ Gest/dades; en Linux, ~/.config/IAQ Gest/dades. Se abre fácilmente con el icono junto al reloj → Abrir la carpeta de datos. No se envían a ningún servidor de internet (solo la web pública, cuando la publicáis), y desinstalar el programa no los borra. Por eso son tan importantes las copias en una carpeta externa y guardar el archivo clau.key.`,
+      en: `In the program's data folder, on this computer: on Windows, %APPDATA%\\IAQ Gest\\dades; on a Mac, ~/Library/Application Support/IAQ Gest/dades; on Linux, ~/.config/IAQ Gest/dades. You can open it easily with the icon next to the clock → Open data folder. Nothing is sent to an internet server (only the public website, when you publish it), and uninstalling the program does not delete it. That is why backups to an external folder and keeping the clau.key file are so important.`,
     },
     article: 'copies-seguretat',
   },

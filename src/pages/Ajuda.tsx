@@ -324,7 +324,7 @@ function QuantA() {
           <IconaApp mida={64} />
           <div>
             <h2>{t("Quant al programa")}</h2>
-            <strong>I ara qué? · Gestió</strong>
+            <strong>IAQ Gest</strong>
           </div>
         </div>
         <p>

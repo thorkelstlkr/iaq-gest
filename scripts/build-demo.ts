@@ -30,7 +30,7 @@ const asset = (re: RegExp) => {
 const js = asset(/<script[^>]*src="\/?([^"]+\.js)"/).replace(/<\/script/gi, '<\\/script');
 const css = asset(/<link[^>]*rel="stylesheet"[^>]*href="\/?([^"]+\.css)"/);
 
-const pagina = `<title>I ara qué? · Gestió</title>
+const pagina = `<title>IAQ Gest</title>
 <style>
 ${css}
 </style>

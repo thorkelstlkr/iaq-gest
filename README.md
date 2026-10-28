@@ -1,4 +1,4 @@
-# I ara qué Gestió
+# IAQ Gest
 
 ### Solución integral de gestión para asociaciones sin ánimo de lucro
 
@@ -58,9 +58,9 @@ La base de dades (`iaraque.db`), la clau de xifratge (`clau.key`), el registre d
 
 | Sistema | Carpeta |
 |---|---|
-| Windows | `%APPDATA%\I ara qué Gestió\dades` |
-| macOS | `~/Library/Application Support/I ara qué Gestió/dades` |
-| Linux | `~/.config/I ara qué Gestió/dades` |
+| Windows | `%APPDATA%\IAQ Gest\dades` |
+| macOS | `~/Library/Application Support/IAQ Gest/dades` |
+| Linux | `~/.config/IAQ Gest/dades` |
 
 S'hi arriba des de la icona → **Obre la carpeta de dades**. Desinstal·lar el programa no l'esborra.
 
@@ -80,15 +80,15 @@ Descarrega l'instal·lador de la versió nova i executa'l, amb el programa atura
 Si ningú no recorda la contrasenya d'administració, cal accés físic a l'ordinador. Amb el programa aturat (icona → **Surt**), executa'l des d'una finestra d'ordres amb `--restableix-admin <usuari> <nova-contrasenya>`:
 
 ```bat
-:: Windows (Símbol del sistema). Si es va instal·lar per a tots els usuaris: "C:\Program Files\I ara qué Gestió\I ara qué Gestió.exe"
-"%LOCALAPPDATA%\Programs\I ara qué Gestió\I ara qué Gestió.exe" --restableix-admin thorkel NovaContrasenya123
+:: Windows (Símbol del sistema). Si es va instal·lar per a tots els usuaris: "C:\Program Files\IAQ Gest\IAQ Gest.exe"
+"%LOCALAPPDATA%\Programs\IAQ Gest\IAQ Gest.exe" --restableix-admin thorkel NovaContrasenya123
 ```
 
 ```bash
 # macOS
-"/Applications/I ara qué Gestió.app/Contents/MacOS/I ara qué Gestió" --restableix-admin thorkel NovaContrasenya123
+"/Applications/IAQ Gest.app/Contents/MacOS/IAQ Gest" --restableix-admin thorkel NovaContrasenya123
 # Linux (AppImage)
-./I-ara-que-Gestio.AppImage --restableix-admin thorkel NovaContrasenya123
+./IAQ-Gest.AppImage --restableix-admin thorkel NovaContrasenya123
 ```
 
 Si l'usuari existeix, se'n canvia la contrasenya, passa a ser administrador i es reactiva; si no, es crea. Queda anotat al registre d'activitat.
