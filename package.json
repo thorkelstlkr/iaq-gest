@@ -1,6 +1,6 @@
 {
   "name": "iaraque-gestio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "Gestió per a associacions sense ànim de lucre: socis, economia, activitats, web, òrgans de govern i compliment legal.",

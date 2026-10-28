@@ -41,13 +41,13 @@ Landing page estática (un solo `index.html` + `styles.css` + un `script.js` mí
 - Sistema: copias de seguridad automáticas (también a Google Drive / OneDrive / Dropbox), multiusuario con perfiles, catalán / castellano / inglés, ayuda integrada.
 
 ## Instalación
-Instaladores para **Windows, macOS y Linux** (sin instalar nada más), con asistente inicial (administrador, usuarios de la junta, datos de la entidad). Descargas: https://github.com/thorkelstlkr/iaraque-gestio/releases/latest
+Instaladores para **Windows, macOS y Linux** (sin instalar nada más), con asistente inicial (administrador, usuarios de la junta, datos de la entidad). Descargas: https://github.com/thorkelstlkr/iaq-gest/releases/latest
 
 ## Enlaces
-- Código: https://github.com/thorkelstlkr/iaraque-gestio
-- Descargas: https://github.com/thorkelstlkr/iaraque-gestio/releases/latest
+- Código: https://github.com/thorkelstlkr/iaq-gest
+- Descargas: https://github.com/thorkelstlkr/iaq-gest/releases/latest
 - Demo en línea (datos inventados): https://claude.ai/artifact/KyUKUttbR9KYZXHkJRbFPF
-- Licencia: https://github.com/thorkelstlkr/iaraque-gestio/blob/main/LICENSE
+- Licencia: https://github.com/thorkelstlkr/iaq-gest/blob/main/LICENSE
 - Creado por la Associació I ara qué? (Pollença, Mallorca).
 
 ## Identidad visual
