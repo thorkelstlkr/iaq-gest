@@ -1,0 +1,59 @@
+<section id="mcp" class="seccion">
+    <div class="contenidor">
+        <h2 class="titol-seccio">Diseñado para la IA: arquitectura MCP</h2>
+        <p class="entradeta">MCP (Model Context Protocol) es el estándar abierto con el que los asistentes de IA usan las herramientas de otros programas. IAQ Gest ofrece más de 80 herramientas por MCP, así que cada miembro de la junta conecta su propio asistente a su cuenta y gestiona la asociación conversando.</p>
+        <p class="entradeta">Cada herramienta tiene uno de tres niveles —lectura, escritura o propuesta— y el asistente solo puede hacer lo que permite el cargo de su dueño.</p>
+        <div class="graella">
+            <div class="targeta">
+                <span class="icona">👤</span>
+                <h3>Cada persona su asistente</h3>
+                <p>Conecta su asistente de IA (Claude, ChatGPT, Gemini, Copilot, Cursor, agentes propios) a su cuenta.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔑</span>
+                <h3>Clave personal revocable</h3>
+                <p>Cada persona tiene su clave (revocable y con caducidad) y el asistente actúa con los permisos de su cargo: tesorería solo ve economía.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔒</span>
+                <h3>Propuestas para acciones importantes</h3>
+                <p>Cobrar una remesa, borrar o publicar quedan como propuestas que la persona aprueba con un clic.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔍</span>
+                <h3>Nunca ve datos sensibles</h3>
+                <p>DNI/NIE/NIF, IBAN y similares se filtran automáticamente antes de llegar al modelo.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔗</span>
+                <h3>Conexión con Claude.ai y ChatGPT por OAuth</h3>
+                <p>Conexión segura y privada con un código de un solo uso.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">📊</span>
+                <h3>Registro de actividad y acceso remoto</h3>
+                <p>Acceso seguro con Tailscale y registro de toda la actividad del agente.</p>
+            </div>
+        </div>
+        <h3>Pídeselo a tu asistente</h3>
+        <ul class="cites">
+            <li>¿Qué socios tienen la cuota de 2026 pendiente?</li>
+            <li>Prepara la remesa SEPA de octubre</li>
+            <li>Redacta el acta de la última junta</li>
+            <li>Publica en la web la noticia de la fiesta del sábado</li>
+            <li>¿Cuánto nos queda por justificar de la subvención del Consell?</li>
+            <li>Recuérdame las obligaciones fiscales de este trimestre</li>
+        </ul>
+        <h3>Conéctalo en un minuto</h3>
+        <p>Servidor MCP por HTTP para Claude.ai y ChatGPT, puente stdio para Claude Desktop o Cursor, y descripción OpenAPI 3.1 para cualquier otro agente. Ejemplo para Claude Desktop o Cursor:</p>
+        <pre class="codi"><code>{
+  "mcpServers": {
+    "iaraque-gestio": {
+      "command": "node",
+      "args": ["scripts/mcp.ts"],
+      "env": { "IARAQUE_URL": "http://127.0.0.1:3000", "IARAQUE_CLAU": "iaq_..." }
+    }
+  }
+}</code></pre>
+    </div>
+</section>

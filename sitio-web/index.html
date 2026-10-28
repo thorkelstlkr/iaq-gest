@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IAQ Gest · Gestión de asociaciones con IA (MCP), gratis y open source</title>
+  <meta name="description" content="Programa gratuito y de código abierto (MIT) para gestionar asociaciones sin ánimo de lucro con tu asistente de IA (Claude, ChatGPT…) gracias a MCP." />
+  <link rel="canonical" href="https://thorkelstlkr.github.io/iaraque-gestio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="IAQ Gest · Gestiona tu asociación hablando con tu asistente de IA" />
+  <meta property="og:description" content="Gratuito, de código abierto y basado en MCP: socios, cuotas, contabilidad y actividades desde Claude, ChatGPT o Gemini, con tus datos en tu ordenador." />
+  <meta property="og:url" content="https://thorkelstlkr.github.io/iaraque-gestio/" />
+  <meta property="og:image" content="https://thorkelstlkr.github.io/iaraque-gestio/img/logo-clar.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#a63d24" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="salta" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="contenidor cabecera-in">
+      <a href="#" class="marca" aria-label="IAQ Gest, inicio">
+        <img src="img/logo-clar.png" alt="IAQ Gest" class="logo logo-clar" height="44" />
+        <img src="img/logo-fosc.png" alt="" class="logo logo-fosc" height="44" />
+      </a>
+      <button class="menu-boto" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="#mcp">MCP</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#open-source">Open source</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#descargar" class="boto">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="contenidor hero-in">
+        <div>
+          <p class="xip">Gratuito · Código abierto (MIT) · Basado en MCP</p>
+          <h1>Gestiona tu asociación hablando con tu asistente de IA</h1>
+          <p class="entradeta">IAQ Gest es una solución integral y gratuita para asociaciones sin ánimo de lucro. Gracias a <strong>MCP (Model Context Protocol)</strong>, cada miembro de la junta conecta su propio asistente —Claude, ChatGPT, Gemini, Copilot…— a su cuenta y gestiona socios, cuotas, contabilidad o actividades conversando. Y tus datos se quedan en tu ordenador.</p>
+          <div class="botons">
+            <a class="boto" href="#descargar">Descargar gratis</a>
+            <a class="boto boto-sec" href="https://claude.ai/artifact/KyUKUttbR9KYZXHkJRbFPF">Probar la demo</a>
+            <a class="boto boto-sec" href="https://github.com/thorkelstlkr/iaraque-gestio">Ver en GitHub</a>
+          </div>
+        </div>
+        <figure class="esquema" aria-label="Tu asistente de IA se conecta por MCP a IAQ Gest, que guarda los datos en tu ordenador">
+          <ul class="esquema-ias"><li>Claude</li><li>ChatGPT</li><li>Gemini</li><li>Copilot</li><li>Cursor</li></ul>
+          <div class="esquema-fletxa"><strong>MCP</strong><span>claves personales · propuestas · sin datos sensibles</span></div>
+          <div class="esquema-app"><img src="img/icona-512.png" alt="" width="64" height="64" /><strong>IAQ Gest</strong><span>en el ordenador de la asociación</span></div>
+        </figure>
+      </div>
+    </section>
+    <section id="mcp" class="seccion">
+    <div class="contenidor">
+        <h2 class="titol-seccio">Diseñado para la IA: arquitectura MCP</h2>
+        <p class="entradeta">MCP (Model Context Protocol) es el estándar abierto con el que los asistentes de IA usan las herramientas de otros programas. IAQ Gest ofrece más de 80 herramientas por MCP, así que cada miembro de la junta conecta su propio asistente a su cuenta y gestiona la asociación conversando.</p>
+        <p class="entradeta">Cada herramienta tiene uno de tres niveles —lectura, escritura o propuesta— y el asistente solo puede hacer lo que permite el cargo de su dueño.</p>
+        <div class="graella">
+            <div class="targeta">
+                <span class="icona">👤</span>
+                <h3>Cada persona su asistente</h3>
+                <p>Conecta su asistente de IA (Claude, ChatGPT, Gemini, Copilot, Cursor, agentes propios) a su cuenta.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔑</span>
+                <h3>Clave personal revocable</h3>
+                <p>Cada persona tiene su clave (revocable y con caducidad) y el asistente actúa con los permisos de su cargo: tesorería solo ve economía.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔒</span>
+                <h3>Propuestas para acciones importantes</h3>
+                <p>Cobrar una remesa, borrar o publicar quedan como propuestas que la persona aprueba con un clic.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔍</span>
+                <h3>Nunca ve datos sensibles</h3>
+                <p>DNI/NIE/NIF, IBAN y similares se filtran automáticamente antes de llegar al modelo.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">🔗</span>
+                <h3>Conexión con Claude.ai y ChatGPT por OAuth</h3>
+                <p>Conexión segura y privada con un código de un solo uso.</p>
+            </div>
+            <div class="targeta">
+                <span class="icona">📊</span>
+                <h3>Registro de actividad y acceso remoto</h3>
+                <p>Acceso seguro con Tailscale y registro de toda la actividad del agente.</p>
+            </div>
+        </div>
+        <h3>Pídeselo a tu asistente</h3>
+        <ul class="cites">
+            <li>¿Qué socios tienen la cuota de 2026 pendiente?</li>
+            <li>Prepara la remesa SEPA de octubre</li>
+            <li>Redacta el acta de la última junta</li>
+            <li>Publica en la web la noticia de la fiesta del sábado</li>
+            <li>¿Cuánto nos queda por justificar de la subvención del Consell?</li>
+            <li>Recuérdame las obligaciones fiscales de este trimestre</li>
+        </ul>
+        <h3>Conéctalo en un minuto</h3>
+        <p>Servidor MCP por HTTP para Claude.ai y ChatGPT, puente stdio para Claude Desktop o Cursor, y descripción OpenAPI 3.1 para cualquier otro agente. Ejemplo para Claude Desktop o Cursor:</p>
+        <pre class="codi"><code>{
+  "mcpServers": {
+    "iaraque-gestio": {
+      "command": "node",
+      "args": ["scripts/mcp.ts"],
+      "env": { "IARAQUE_URL": "http://127.0.0.1:3000", "IARAQUE_CLAU": "iaq_..." }
+    }
+  }
+}</code></pre>
+    </div>
+</section>
+    <section id="funciones" class="seccion seccion-alt">
+  <div class="contenidor">
+    <h2 class="titol-seccio">Todo lo que necesita tu asociación</h2>
+    <div class="graella">
+      <div class="targeta">
+        <span class="icona">👥</span>
+        <h3>Personas</h3>
+        <ul>
+          <li>Socios (libro registro, altas y bajas, categorías, carnés)</li>
+          <li>Interesados</li>
+          <li>Seguimiento CRM</li>
+          <li>Comunicaciones</li>
+          <li>Voluntariado (Ley 45/2015)</li>
+          <li>Colaboradores</li>
+        </ul>
+      </div>
+      <div class="targeta">
+        <span class="icona">💰</span>
+        <h3>Economía</h3>
+        <ul>
+          <li>Cuotas</li>
+          <li>Contabilidad</li>
+          <li>Tesorería y remesas SEPA</li>
+          <li>Presupuesto y cierre</li>
+          <li>Facturación VERI*FACTU</li>
+          <li>Subvenciones con cuenta justificativa</li>
+          <li>Donativos y modelo 182</li>
+          <li>Inventario</li>
+          <li>Modelos 111/115/180/190/347/200</li>
+        </ul>
+      </div>
+      <div class="targeta">
+        <span class="icona">📅</span>
+        <h3>Actividades y difusión</h3>
+        <ul>
+          <li>Actividades con inscripciones y lista de espera</li>
+          <li>Web pública personalizable publicada por FTP</li>
+          <li>Redes sociales</li>
+        </ul>
+      </div>
+      <div class="targeta">
+        <span class="icona">⚖️</span>
+        <h3>Gobierno y cumplimiento</h3>
+        <ul>
+          <li>Asambleas y juntas</li>
+          <li>Libro de actas</li>
+          <li>Cargos y certificados</li>
+          <li>RGPD</li>
+          <li>Calendario de obligaciones</li>
+        </ul>
+      </div>
+      <div class="targeta">
+        <span class="icona">🛠️</span>
+        <h3>Sistema</h3>
+        <ul>
+          <li>Copias de seguridad automáticas (también a Google Drive / OneDrive / Dropbox)</li>
+          <li>Multiusuario con perfiles</li>
+          <li>Catalán / castellano / inglés</li>
+          <li>Ayuda integrada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="open-source" class="seccion">
+  <div class="contenidor">
+    <h2 class="titol-seccio">Gratis y de código abierto, de verdad</h2>
+    <p class="entradeta">Con licencia MIT: puedes usarlo, modificarlo y redistribuirlo libremente. Sin cuotas, sin suscripciones y sin límite de socios.</p>
+    <div class="graella">
+      <div class="targeta">
+        <span class="icona">💡</span>
+        <h3>Sin cuotas ni suscripciones</h3>
+        <p>Ni gratis por un tiempo ni versión «premium»: todo el programa es gratuito para siempre.</p>
+      </div>
+      <div class="targeta">
+        <span class="icona">💻</span>
+        <h3>Código abierto (MIT)</h3>
+        <p>El código fuente está disponible en GitHub bajo la licencia MIT.</p>
+      </div>
+      <div class="targeta">
+        <span class="icona">👥</span>
+        <h3>Hecho por y para asociaciones</h3>
+        <p>Contribuye a la comunidad en GitHub y participa en la mejora del proyecto.</p>
+      </div>
+    </div>
+    <p class="botons"><a href="https://github.com/thorkelstlkr/iaraque-gestio" class="boto boto-sec">Ver el código en GitHub</a></p>
+  </div>
+</section>
+    <section id="privacidad" class="seccion">
+  <div class="contenidor">
+    <h2 class="titol-seccio">Tus datos, en tu ordenador</h2>
+    <p class="entradeta">Funciona en local y nada sale a la nube si no lo decidís.</p>
+    <div class="graella">
+      <div class="targeta">
+        <span class="icona">💻</span>
+        <h3>Funciona en local</h3>
+        <p>El programa y la base de datos están en el ordenador de la asociación, no en servidores ajenos.</p>
+      </div>
+      <div class="targeta">
+        <span class="icona">💾</span>
+        <h3>Copias de seguridad automáticas</h3>
+        <p>Una copia diaria automática, y si quieres también en Google Drive, OneDrive o Dropbox.</p>
+      </div>
+      <div class="targeta">
+        <span class="icona">🏠</span>
+        <h3>Desde casa con Tailscale</h3>
+        <p>Cada miembro de la junta lo usa desde su casa por una red privada, sin abrir el programa a internet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="descargar" class="seccion seccion-alt">
+  <div class="contenidor">
+    <h2 class="titol-seccio">Descárgalo gratis</h2>
+    <p class="entradeta">Instaladores para Windows, macOS y Linux sin instalar nada más, con asistente inicial (administrador, usuarios de la junta, datos de la entidad).</p>
+    <div class="graella">
+      <div class="targeta">
+        <span class="icona">🪟</span>
+        <h3>Windows</h3>
+        <p><a class="boto" href="https://github.com/thorkelstlkr/iaraque-gestio/releases/latest">Descargar</a></p>
+      </div>
+      <div class="targeta">
+        <span class="icona">🍎</span>
+        <h3>macOS</h3>
+        <p><a class="boto" href="https://github.com/thorkelstlkr/iaraque-gestio/releases/latest">Descargar</a></p>
+      </div>
+      <div class="targeta">
+        <span class="icona">🐧</span>
+        <h3>Linux</h3>
+        <p><a class="boto" href="https://github.com/thorkelstlkr/iaraque-gestio/releases/latest">Descargar</a></p>
+      </div>
+    </div>
+    <p class="botons"><a class="boto boto-sec" href="https://claude.ai/artifact/KyUKUttbR9KYZXHkJRbFPF">Probar la demo en línea</a></p>
+  </div>
+</section>
+    <section id="faq" class="seccion seccion-alt">
+    <div class="contenidor">
+        <h2 class="titol-seccio">Preguntas frecuentes</h2>
+        <div class="faq">
+            <details>
+                <summary>¿Es realmente gratis?</summary>
+                <p>Sí, IAQ Gest es completamente gratuito y de código abierto, con licencia MIT.</p>
+            </details>
+            <details>
+                <summary>¿Necesito saber de IA o de informática?</summary>
+                <p>No. Se instala como cualquier otro programa y un asistente te guía al empezar. Conectar tu asistente de IA es opcional y el programa te explica paso a paso cómo hacerlo.</p>
+            </details>
+            <details>
+                <summary>¿Puedo usarlo sin asistente de IA?</summary>
+                <p>Sí. IAQ Gest es un programa completo con su propia ventana; el asistente de IA es una forma más de usarlo, no un requisito.</p>
+            </details>
+            <details>
+                <summary>¿El asistente puede ver los DNI o las cuentas bancarias?</summary>
+                <p>No, los datos sensibles como DNI/NIE/NIF y cuentas bancarias se filtran automáticamente para proteger la privacidad.</p>
+            </details>
+            <details>
+                <summary>¿Dónde se guardan los datos?</summary>
+                <p>Tus datos se guardan en tu ordenador local y no se envían a la nube sin tu consentimiento explícito.</p>
+            </details>
+            <details>
+                <summary>¿Puedo usarlo desde casa?</summary>
+                <p>Sí, puedes usar IAQ Gest desde casa gracias a Tailscale: cada miembro de la junta se conecta al ordenador de la asociación por una red privada, sin abrirlo a internet. La ayuda del programa lo explica paso a paso.</p>
+            </details>
+        </div>
+    </div>
+</section>
+  </main>
+
+  <footer class="peu">
+    <div class="contenidor peu-in">
+      <img src="img/logo-fosc.png" alt="IAQ Gest" height="48" />
+      <p>Software libre bajo <a href="https://github.com/thorkelstlkr/iaraque-gestio/blob/main/LICENSE">licencia MIT</a>. Creado por la Associació I ara qué? (Pollença, Mallorca).</p>
+      <p><a href="https://github.com/thorkelstlkr/iaraque-gestio">GitHub</a> · <a href="https://github.com/thorkelstlkr/iaraque-gestio/releases/latest">Descargas</a> · <a href="https://claude.ai/artifact/KyUKUttbR9KYZXHkJRbFPF">Demo</a> · © <span id="any"></span></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

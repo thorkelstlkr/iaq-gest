@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IAQ Gest · Gestión de asociaciones con IA (MCP), gratis y open source</title>
+  <!-- SECCIO:seo -->
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="salta" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="contenidor cabecera-in">
+      <a href="#" class="marca" aria-label="IAQ Gest, inicio">
+        <img src="img/logo-clar.png" alt="IAQ Gest" class="logo logo-clar" height="44" />
+        <img src="img/logo-fosc.png" alt="" class="logo logo-fosc" height="44" />
+      </a>
+      <button class="menu-boto" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="#mcp">MCP</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#open-source">Open source</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#descargar" class="boto">Descargar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="contenidor hero-in">
+        <div>
+          <p class="xip">Gratuito · Código abierto (MIT) · Basado en MCP</p>
+          <h1>Gestiona tu asociación hablando con tu asistente de IA</h1>
+          <p class="entradeta">IAQ Gest es una solución integral y gratuita para asociaciones sin ánimo de lucro. Gracias a <strong>MCP (Model Context Protocol)</strong>, cada miembro de la junta conecta su propio asistente —Claude, ChatGPT, Gemini, Copilot…— a su cuenta y gestiona socios, cuotas, contabilidad o actividades conversando. Y tus datos se quedan en tu ordenador.</p>
+          <div class="botons">
+            <a class="boto" href="#descargar">Descargar gratis</a>
+            <a class="boto boto-sec" href="https://claude.ai/artifact/KyUKUttbR9KYZXHkJRbFPF">Probar la demo</a>
+            <a class="boto boto-sec" href="https://github.com/thorkelstlkr/iaraque-gestio">Ver en GitHub</a>
+          </div>
+        </div>
+        <figure class="esquema" aria-label="Tu asistente de IA se conecta por MCP a IAQ Gest, que guarda los datos en tu ordenador">
+          <ul class="esquema-ias"><li>Claude</li><li>ChatGPT</li><li>Gemini</li><li>Copilot</li><li>Cursor</li></ul>
+          <div class="esquema-fletxa"><strong>MCP</strong><span>claves personales · propuestas · sin datos sensibles</span></div>
+          <div class="esquema-app"><img src="img/icona-512.png" alt="" width="64" height="64" /><strong>IAQ Gest</strong><span>en el ordenador de la asociación</span></div>
+        </figure>
+      </div>
+    </section>
+    <!-- SECCIO:mcp -->
+    <!-- SECCIO:funciones -->
+    <!-- SECCIO:opensource -->
+    <!-- SECCIO:privacidad -->
+    <!-- SECCIO:descargar -->
+    <!-- SECCIO:faq -->
+  </main>
+
+  <footer class="peu">
+    <div class="contenidor peu-in">
+      <img src="img/logo-fosc.png" alt="IAQ Gest" height="48" />
+      <p>Software libre bajo <a href="https://github.com/thorkelstlkr/iaraque-gestio/blob/main/LICENSE">licencia MIT</a>. Creado por la Associació I ara qué? (Pollença, Mallorca).</p>
+      <p><a href="https://github.com/thorkelstlkr/iaraque-gestio">GitHub</a> · <a href="https://github.com/thorkelstlkr/iaraque-gestio/releases/latest">Descargas</a> · <a href="https://claude.ai/artifact/KyUKUttbR9KYZXHkJRbFPF">Demo</a> · © <span id="any"></span></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
