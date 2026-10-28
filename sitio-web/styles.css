@@ -71,6 +71,11 @@ h3 { font-size: 1.25rem; font-weight: 600; }
 .menu a:not(.boto):hover { color: var(--primari); }
 .menu-boto { display: none; font: inherit; font-weight: 600; background: none; color: var(--text); border: 1px solid var(--vora); border-radius: 8px; padding: 0.4rem 0.8rem; cursor: pointer; }
 
+.idiomes { display: flex; gap: 0.25rem; font-size: 0.85rem; }
+.idiomes a, .idiomes span { padding: 0.15rem 0.45rem; border-radius: 6px; color: var(--suau); text-decoration: none; font-weight: 600; }
+.idiomes [aria-current] { background: color-mix(in srgb, var(--primari) 12%, transparent); color: var(--primari); }
+@media (max-width: 860px) { .idiomes { padding-top: 0.75rem; justify-content: center; } }
+
 /* Botones y chips */
 .botons { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 .boto {

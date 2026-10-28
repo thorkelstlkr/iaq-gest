@@ -34,7 +34,7 @@ jobs:
     - name: Prepare site
       run: |
         mkdir _site
-        cp -r sitio-web/index.html sitio-web/styles.css sitio-web/script.js sitio-web/img _site/
+        cp -r sitio-web/index.html sitio-web/styles.css sitio-web/script.js sitio-web/img sitio-web/ca sitio-web/en _site/
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
