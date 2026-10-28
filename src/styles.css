@@ -2354,8 +2354,34 @@ pre.xml {
   display: block;
   flex: none;
 }
-.acces-targeta > .icona-app {
+.logo-app {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+.acces-targeta > .logo-app {
   align-self: center;
+}
+.marca {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+.marca-entitat {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  min-width: 0;
+}
+.marca-entitat .marca-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+.marca-entitat strong {
+  font-size: 1rem;
 }
 .quant-a-cap {
   display: flex;
@@ -2365,4 +2391,22 @@ pre.xml {
 }
 .quant-a-cap h2 {
   margin: 0;
+}
+@media (max-width: 900px) {
+  .marca {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .marca .logo-app {
+    height: 36px;
+  }
+  .lateral .marca-entitat .marca-logo {
+    display: none;
+  }
+  .lateral .marca-entitat strong {
+    font-size: 0.85rem;
+    color: #b9ab9b;
+    font-weight: 600;
+  }
 }

@@ -34,6 +34,7 @@ import Inventari from './pages/Inventari';
 import AgentIA from './pages/AgentIA';
 import { canviaIdioma, idioma, opcionsIdioma, t } from './i18n';
 import { MenuLateral } from './components/MenuLateral';
+import { LogoApp } from './components/LogoApp';
 import type { GrupMenu } from './components/MenuLateral';
 import Ajuda from './pages/Ajuda';
 import type { Idioma } from './i18n';
@@ -151,10 +152,13 @@ function Aplicacio({ surt }: { surt: () => void }) {
       <div className="app">
         <aside className="lateral">
           <div className="marca">
-            <Logo />
-            <div>
-              <strong>{config?.nom || t("Gestió")}</strong>
-              {config?.lema && <small>{config.lema}</small>}
+            <LogoApp versio="fosc" alcada={80} />
+            <div className="marca-entitat">
+              <Logo />
+              <div>
+                <strong>{config?.nom || t("Gestió")}</strong>
+                {config?.lema && <small>{config.lema}</small>}
+              </div>
             </div>
           </div>
           <MenuLateral grups={menu} />

@@ -5,7 +5,7 @@ import { DEMO } from '../mode';
 import { Camp } from './ui';
 import type { Usuari } from '../../shared/types';
 import { canviaIdioma, esIdioma, idioma, opcionsIdioma, t } from '../i18n';
-import { IconaApp } from './IconaApp';
+import { LogoApp } from './LogoApp';
 import { Assistent } from './assistent/Assistent';
 
 interface Estat {
@@ -93,7 +93,7 @@ function Entrar({ onFet }: { onFet: () => void }) {
     <div className="acces">
       <form className="acces-targeta" onSubmit={envia}>
         <SelectorIdioma />
-        <IconaApp />
+        <LogoApp versio="clar" alcada={84} />
         <h1>{t("Gestió de l'associació")}</h1>
         <p className="apagat">{t("Inicia la sessió per continuar.")}</p>
         <Camp etiqueta={t("Usuari")}>
